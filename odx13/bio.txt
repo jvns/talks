@@ -1,0 +1,7 @@
+Julia is a data scientist and programmer living in Montréal. In her free
+time, she plays with open data at home, and organizes events for
+programmers and aspiring programmers. She co-organizes Montréal All-Girl
+Hack Night, a series of developer meetups for women, and PyLadies
+Montréal, meetups and workshops for people to learn Python programming.
+She is most interested in uses of data that make people's lives easier
+on a day-to-day basis.
