@@ -1,0 +1,56 @@
+Speaker bio
+-----------
+
+Julia Evans was studying pure math and thought statistics was boring
+when Bixi started publishing their data, and proved her so, so, wrong.
+She started making maps and plotting time series obsessively and now
+works as a data scientist where she gets to do that all day. She spends
+all day every day looking at IPython Notebook.
+
+She's especially interested in how data science can make people's lives
+better, and how to stop it from making things worse.  She also
+co-organizes PyLadies Montréal and Montréal All-Girl Hack Night.
+
+Talk proposal
+-------------
+
+Title: "Diving into Open Data with IPython Notebook & pandas"
+
+Abstract
+--------
+
+I'll walk you through Python's best tools for getting a grip on some new
+open data: IPython Notebook and pandas. I'll show you how to read in
+data, clean it up, graph it, and draw some conclusions, using some open
+data about the number of cyclists on Montréal's bike paths as an example.
+
+Details
+-------
+
+I can do the talk in either 20 minutes or longer.
+
+The idea is to choose a sample data set (probably cyclists on Montréal's
+bike paths, but maybe something else), and show how to
+
+- clean up the data (fix date formatting issues, remove null values, ...)
+- graph the data
+- download some weather data from the weather office website and look at
+  the correlation between weather and number of people biking
+- show how to aggregate the data to find out how many people bike on
+  Mondays vs Wednesdays
+- talk about possible directions to take the project (make a model using
+  scikit-learn or PyMC!)
+
+
+I gave a lightning talk similar to this at Montréal Python. The video is
+here:
+
+My credentials: I work as a data scientist, and I've been spending all
+day every day for the last 6 months working inside IPython Notebook and
+typing 'import pandas as pd' as the first line :)
+
+This is not substantially different in aim from the talk Taavi Burns
+gave at the last Pycon Canada, but I keep meeting all kinds of people
+who don't know about IPython Notebook, so I think it's still of interest
+:)
+
