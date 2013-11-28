@@ -1,12 +1,10 @@
-Materials for talks I've given (so far, one)
+Talks
+=====
 
-Montreal bike path data with pandas
------------------------------------
+Materials for talks I've given.
 
-At [Montreal Python #35](http://montrealpython.org/2013/02/mp35/)
+[Montreal Python 35 - lightning talk on cycling data](http://nbviewer.ipython.org/url/raw.github.com/jvns/talks/master/mtlpy35/pistes-cyclables.ipynb) ([video](https://www.youtube.com/watch?v=2JJ102ZpoH0))
 
-[View the IPython Notebook using nbviewer](http://nbviewer.ipython.org/url/raw.github.com/jvns/talks/master/mtlpy35/pistes-cyclables.ipynb)
+[PyCon Canada 2013 - Diving into Open Data with IPython Notebook & Pandas](http://nbviewer.ipython.org/github/jvns/talks/blob/master/pydatanyc2013/PyData%20NYC%202013%20tutorial.ipynb) ([video](http://pyvideo.org/video/2330/diving-into-open-data-with-ipython-notebook-pan))
 
-You can download the data used [here](http://donnees.ville.montreal.qc.ca/fiche/velos-comptage/)
-
-Yay!
+[PyData NYC 2013 - A Practical Introduction to IPython Notebook and Pandas](http://nbviewer.ipython.org/github/jvns/talks/blob/master/pydatanyc2013/PyData%20NYC%202013%20tutorial.ipynb) ([video](http://vimeo.com/79835526))
