@@ -1,0 +1,3 @@
+[submodule "cusec2014/reveal.js"]
+	path = cusec2014/reveal.js
+	url = https://github.com/hakimel/reveal.js.git
