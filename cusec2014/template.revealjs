@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">    
+<head>
+    <meta charset="utf-8">
+    <title>Title: Subtitle</title>
+    <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal_js/css/theme/night.css" id="theme">
+</head>
+ 
+<body>
+    <div class="reveal">
+        <div class="slides">
+$body$
+        </div>
+    </div>
+    <script src="reveal_js/lib/js/head.min.js"></script>
+    <script src="reveal_js/js/reveal.min.js"></script>
+    <script>
+        // Required, even if empty.
+        Reveal.initialize({
+            controls: false,
+            progress: false,
+            rollingLinks: false,
+            transition: "none",
+            maxScale: 10.0,
+        });
+    </script>
+</body>
+</html>
