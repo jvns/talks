@@ -60,6 +60,100 @@ Put some silly pictures here. It will be better.
 
 <!-- ![hey, it's an image](images/garlic_scapes.jpg) -->
 
-# That's about it
+# 3. Strategies for getting started
 
-Now, go communicate something!
+# Strategy 1: <br> Read some <br> kernel code
+
+# BUT THAT'S TERRIFYING!!!!!
+
+Pick one system call and try to understand one thing about it
+
+# 
+
+Linux kernel: LXR, [http://livegrep.com](http://livegrep.com)
+
+OS X kernel: TODO FIND THIS IT IS IMPORTANT
+
+# 
+
+TODO FIX THIS AND MAKE IT PRETTY
+
+```c
+static int chmod_common(struct path *path, umode_t mode)
+{
+    struct inode *inode = path->dentry->d_inode;
+    struct iattr newattrs;
+    int error;
+
+    error = mnt_want_write(path->mnt);
+    if (error)
+        return error;
+
+    mutex_lock(&inode->i_mutex); // Lock to prevent a race condition!
+
+    error = security_path_chmod(path, mode); // Make sure we're allowed to do this
+    if (error)
+        goto out_unlock;
+    newattrs.ia_mode = (mode & S_IALLUGO) | (inode->i_mode & ~S_IALLUGO);
+    newattrs.ia_valid = ATTR_MODE | ATTR_CTIME;
+    error = notify_change(path->dentry, &newattrs);
+out_unlock:
+    mutex_unlock(&inode->i_mutex); // We're done, so the mutex is over!
+    mnt_drop_write(path->mnt); // ???
+    return error;
+}
+```
+
+# Strategy 2: <br> Write a <br> kernel module
+
+DEMO DEMO DEMO
+
+# 
+
+```
+static int __init rickroll_init(void) {
+    sys_call_table = find_sys_call_table();
+    DISABLE_WRITE_PROTECTION;
+    original_sys_open = (void *) sys_call_table[__NR_open];
+    sys_call_table[__NR_open] = (unsigned long *) rickroll_open;
+    ENABLE_WRITE_PROTECTION;
+    return 0;  /* zero indicates success */
+}
+
+static void __exit rickroll_cleanup(void)
+{
+    printk(KERN_INFO "Ok, now we're gonna give you up. Sorry.\n");
+
+    /* Restore the original sys_open in the table */
+    DISABLE_WRITE_PROTECTION;
+    sys_call_table[__NR_open] = (unsigned long *) original_sys_open;
+    ENABLE_WRITE_PROTECTION;
+}
+```
+
+#
+
+```
+static char *rickroll_filename = "/home/bork/media/music/Rick Astley - Never Gonna Give You Up.mp3";
+
+asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mode)
+{
+    int len = strlen(filename);
+
+    if(strcmp(filename + len - 4, ".mp3")) { // Leave it alone
+        return (*original_sys_open)(filename, flags, mode);
+    } else {
+        mm_segment_t old_fs;
+        long fd;
+        old_fs = get_fs();
+        set_fs(KERNEL_DS);
+        /* Open the rickroll file instead */
+        fd = (*original_sys_open)(rickroll_filename, flags, mode);
+        set_fs(old_fs);
+        return fd;
+    }
+}
+```
+
+
+# Okay no more <br> code I promise
