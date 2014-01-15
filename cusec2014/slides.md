@@ -1,40 +1,64 @@
-# This is the Title
+# You can be a <br>kernel hacker
 
-Example of markdown-to-reveal.js setup
+by Julia Evans <br>
+[twitter.com/b0rk][twitter]  <br>
+[github.com/jvns][github]  <br>
 
-by Scott Vokes ([@silentbicycle][sb])
+[twitter]: https://github.com/jvns
+[github]:  https://twitter.com/b0rk
 
-[sb]: https://github.com/silentbicycle/
+# Who am I?
 
-# Slide format
+Hacker School image here.
 
-A blank line followed by a # title starts a new slide
+# Where we're going
 
-# Including images is easy
+1. WTF is a kernel?
+2. Why should you care?
+3. Strategies for getting started with kernel programming
+    a. Read some kernel code!
+    b. Write a kernel module!
+    c. Write your own operating system
+    d. Do an internship
 
-just use `![label](path/to/image)`
+# 1. WTF is a kernel?
 
-# Garlic scapes
+# Kernels are <br> just code!
 
-Yay
+#
 
-![hey, it's an image](images/garlic_scapes.jpg)
-<!-- Image is Creative Commons, by Flickr user jeanetteirwin. -->
+When I go to http://google.com, kernel code runs for:
 
-# Links are easy
++ Typing in the address
++ Handling every network packet
++ Writing history files to disk
++ Allocating memory
++ Communicating with the graphics card
 
-[The project repository](https://github.com/silentbicycle/markdown_to_reveal/)
+# How to call <br> kernel code
 
-# Bulleted Lists
+System calls!!!
 
-+ apples
-+ bananas
-+ cherries
-+ dinosaurs
+# System calls
 
-# Comments use \<!-- comment --> format
+* open a file! (`open`)
+* start a program! (`execve`)
+* change a file's permissions! (`chmod`)
 
-Just like the secret message <!-- concealed --> on this slide.
+# What we've learned 
+
++ Your kernel does tons of stuff
++ Programs tell it what to do using system calls
+
+# 2. Why should you care?
+
+Put some silly pictures here. It will be better.
+
++ It's fun!
++ People will think you're a badass
++ You'll become a better programmer
+
+<!-- ![hey, it's an image](images/garlic_scapes.jpg) -->
 
 # That's about it
 
