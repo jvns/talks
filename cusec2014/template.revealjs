@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Title: Subtitle</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
-    <link rel="stylesheet" href="reveal_js/css/theme/night.css" id="theme">
+    <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
 </head>
  
 <body>
