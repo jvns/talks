@@ -2,7 +2,7 @@
 <html lang="en">    
 <head>
     <meta charset="utf-8">
-    <title>Title: Subtitle</title>
+    <title>You Can Be a Kernel Hacker</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
     <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
 </head>
@@ -19,7 +19,7 @@ $body$
         // Required, even if empty.
         Reveal.initialize({
             controls: false,
-            progress: false,
+            progress: true,
             rollingLinks: false,
             transition: "none",
             maxScale: 10.0,

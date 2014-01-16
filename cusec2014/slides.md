@@ -3,9 +3,11 @@
 by Julia Evans <br>
 [twitter.com/b0rk][twitter]  <br>
 [github.com/jvns][github]  <br>
+[jvns.ca][website]  <br>
 
 [twitter]: https://github.com/jvns
 [github]:  https://twitter.com/b0rk
+[website]: http://jvns.ca
 
 # Who am I?
 
@@ -39,7 +41,7 @@ When I go to http://google.com, kernel code runs for:
 
 System calls!!!
 
-# System calls
+# System calls: <br> a kernel's API
 
 * open a file! (`open`)
 * start a program! (`execve`)
@@ -157,3 +159,28 @@ asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mo
 
 
 # Okay no more <br> code I promise
+
+# Strategy 3: <br> Write your own OS
+
+# Strategy 4: <br> Do a kernel internship
+
+# Internships
+
++ Google Summer of Code
++ GNOME Outreach Program for Women
+
+# Talk to me!
+
++ Hacker School
++ All-Girl Hack Night / PyLadies
++ Data science
++ Interviewing
++ Promoting yourself
+
+# Questions?
+
+`http://github.com/jvns` <br>
+`http://twitter.com/b0rk` <br>
+`julia@jvns.ca`
+
+`http://bit.ly/you-can-be-a-kernel-hacker`
