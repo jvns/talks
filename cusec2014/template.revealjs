@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
     <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
     <style>
-        #hackerschool {
+        img.image {
             border: none;
         }
     </style>

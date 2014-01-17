@@ -11,7 +11,7 @@ by Julia Evans <br>
 
 # 
 
-<img src="hackerschool_logo.png" id="hackerschool">
+<img src="hackerschool_logo.png" class="image">
 
 # Where we're going
 
@@ -73,33 +73,11 @@ OS X kernel: TODO FIND THIS IT IS IMPORTANT
 
 # 
 
-TODO FIX THIS AND MAKE IT PRETTY
+<img src="chmod-code.png" class="image">
 
-```c
-static int chmod_common(struct path *path, umode_t mode)
-{
-    struct inode *inode = path->dentry->d_inode;
-    struct iattr newattrs;
-    int error;
+# 
 
-    error = mnt_want_write(path->mnt);
-    if (error)
-        return error;
-
-    mutex_lock(&inode->i_mutex); // Lock to prevent a race condition!
-
-    error = security_path_chmod(path, mode); // Make sure we're allowed to do this
-    if (error)
-        goto out_unlock;
-    newattrs.ia_mode = (mode & S_IALLUGO) | (inode->i_mode & ~S_IALLUGO);
-    newattrs.ia_valid = ATTR_MODE | ATTR_CTIME;
-    error = notify_change(path->dentry, &newattrs);
-out_unlock:
-    mutex_unlock(&inode->i_mutex); // We're done, so the mutex is over!
-    mnt_drop_write(path->mnt); // ???
-    return error;
-}
-```
+<img src="chmod-code-crossed-out.png" class="image">
 
 # Strategy 2: <br> Write a <br> kernel module
 
@@ -176,7 +154,7 @@ While at Hacker School:
 
 #
 
-<img src="apple-email.png" id="apple">
+<img src="apple-email.png" class="image">
 
 # Talk to me!
 

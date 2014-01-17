@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
     <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
     <style>
-        #hackerschool {
+        img.image {
             border: none;
         }
     </style>
@@ -21,7 +21,7 @@
 </section>
 <section class="level1" id="section">
 <h1></h1>
-<img src="hackerschool_logo.png" id="hackerschool">
+<img src="hackerschool_logo.png" class="image">
 </section>
 <section class="level1" id="where-were-going">
 <h1>Where we're going</h1>
@@ -97,6 +97,14 @@
 </section>
 <section class="level1" id="section-3">
 <h1></h1>
+<img src="chmod-code.png" class="image">
+</section>
+<section class="level1" id="section-4">
+<h1></h1>
+<img src="chmod-code-crossed-out.png" class="image">
+</section>
+<section class="level1" id="section-5">
+<h1></h1>
 <p>TODO FIX THIS AND MAKE IT PRETTY</p>
 <pre class="sourceCode c"><code class="sourceCode c"><span class="dt">static</span> <span class="dt">int</span> chmod_common(<span class="kw">struct</span> path *path, umode_t mode)
 {
@@ -126,7 +134,7 @@ out_unlock:
 <h1>Strategy 2: <br> Write a <br> kernel module</h1>
 <p>DEMO DEMO DEMO</p>
 </section>
-<section class="level1" id="section-4">
+<section class="level1" id="section-6">
 <h1></h1>
 <pre><code>static int __init rickroll_init(void) {
     sys_call_table = find_sys_call_table();
@@ -147,7 +155,7 @@ static void __exit rickroll_cleanup(void)
     ENABLE_WRITE_PROTECTION;
 }</code></pre>
 </section>
-<section class="level1" id="section-5">
+<section class="level1" id="section-7">
 <h1></h1>
 <pre><code>static char *rickroll_filename = &quot;/home/bork/media/music/Rick Astley - Never Gonna Give You Up.mp3&quot;;
 
@@ -196,9 +204,9 @@ asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mo
 <li>Lots of those blog posts are bad. Nobody cares about the bad posts.</li>
 </ul>
 </section>
-<section class="level1" id="section-6">
+<section class="level1" id="section-8">
 <h1></h1>
-<img src="apple-email.png" id="apple">
+<img src="apple-email.png" class="image">
 </section>
 <section class="level1" id="talk-to-me">
 <h1>Talk to me!</h1>
