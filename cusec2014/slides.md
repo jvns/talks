@@ -9,9 +9,9 @@ by Julia Evans <br>
 [github]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
 
-# Who am I?
+# 
 
-Hacker School image here.
+<img src="hackerschool_logo.png" id="hackerschool">
 
 # Where we're going
 
@@ -54,13 +54,8 @@ System calls!!!
 
 # 2. Why should you care?
 
-Put some silly pictures here. It will be better.
-
-+ It's fun!
 + People will think you're a badass
 + You'll become a better programmer
-
-<!-- ![hey, it's an image](images/garlic_scapes.jpg) -->
 
 # 3. Strategies for getting started
 
@@ -169,6 +164,20 @@ asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mo
 + Google Summer of Code
 + GNOME Outreach Program for Women
 
+# Blogging = awesome
+
+While at Hacker School:
+
++ I wrote 50 blog posts
++ 7 of them were on Hacker News
++ 1200 people followed me on Twitter
++ 100,000 people visited my blog
++ Lots of those blog posts are bad. Nobody cares about the bad posts.
+
+#
+
+<img src="apple-email.png" id="apple">
+
 # Talk to me!
 
 + Hacker School
@@ -183,4 +192,7 @@ asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mo
 `http://twitter.com/b0rk` <br>
 `julia@jvns.ca`
 
-`http://bit.ly/you-can-be-a-kernel-hacker`
+
+Resources:
+
+`http://bit.ly/kernelfun`
