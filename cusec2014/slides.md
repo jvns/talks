@@ -57,6 +57,20 @@ System calls!!!
 + People will think you're a badass
 + You'll become a better programmer
 
+# Usual strategies
+
+* Read LKML
+* Submit patches
+* Linus yells at you for being dumb
+* Cry
+
+# Our strategies
+
+1. Read some kernel code!
+1. Write a kernel module!
+1. Write your own operating system
+1. Do an internship
+
 # 3. Strategies for getting started
 
 # Strategy 1: <br> Read some <br> kernel code
@@ -69,7 +83,7 @@ Pick one system call and try to understand one thing about it
 
 Linux kernel: LXR, [http://livegrep.com](http://livegrep.com)
 
-OS X kernel: TODO FIND THIS IT IS IMPORTANT
+OS X kernel: [http://opensource.apple.com](http://opensource.apple.com)
 
 # 
 
@@ -79,7 +93,7 @@ OS X kernel: TODO FIND THIS IT IS IMPORTANT
 
 <img src="chmod-code-crossed-out.png" class="image">
 
-# Strategy 2: <br> Write a <br> kernel module
+# Strategy 2: <br> Write a <br> Linux kernel module
 
 DEMO DEMO DEMO
 
@@ -90,6 +104,7 @@ DEMO DEMO DEMO
 # 
 
 <img src="rickroll-init-cleaned-up.png" class="image">
+
 # 
 
 <img src="rickroll-open.png" class="image">
@@ -104,9 +119,11 @@ DEMO DEMO DEMO
 
 # Strategy 3: <br> Write your own OS
 
-# Strategy 4: <br> Do a kernel internship
+Not as scary as it sounds. I promise!
 
-# Internships
+# Strategy 4: <br> Do a Linux kernel <br> internship
+
+# Linux Internships
 
 + Google Summer of Code
 + GNOME Outreach Program for Women
