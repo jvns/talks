@@ -85,50 +85,19 @@ DEMO DEMO DEMO
 
 # 
 
-```
-static int __init rickroll_init(void) {
-    sys_call_table = find_sys_call_table();
-    DISABLE_WRITE_PROTECTION;
-    original_sys_open = (void *) sys_call_table[__NR_open];
-    sys_call_table[__NR_open] = (unsigned long *) rickroll_open;
-    ENABLE_WRITE_PROTECTION;
-    return 0;  /* zero indicates success */
-}
+<img src="rickroll-init.png" class="image">
 
-static void __exit rickroll_cleanup(void)
-{
-    printk(KERN_INFO "Ok, now we're gonna give you up. Sorry.\n");
+# 
 
-    /* Restore the original sys_open in the table */
-    DISABLE_WRITE_PROTECTION;
-    sys_call_table[__NR_open] = (unsigned long *) original_sys_open;
-    ENABLE_WRITE_PROTECTION;
-}
-```
+<img src="rickroll-init-cleaned-up.png" class="image">
+# 
 
-#
+<img src="rickroll-open.png" class="image">
 
-```
-static char *rickroll_filename = "/home/bork/media/music/Rick Astley - Never Gonna Give You Up.mp3";
+# 
 
-asmlinkage long rickroll_open(const char __user *filename, int flags, umode_t mode)
-{
-    int len = strlen(filename);
+<img src="rickroll-open-cleaned-up.png" class="image">
 
-    if(strcmp(filename + len - 4, ".mp3")) { // Leave it alone
-        return (*original_sys_open)(filename, flags, mode);
-    } else {
-        mm_segment_t old_fs;
-        long fd;
-        old_fs = get_fs();
-        set_fs(KERNEL_DS);
-        /* Open the rickroll file instead */
-        fd = (*original_sys_open)(rickroll_filename, flags, mode);
-        set_fs(old_fs);
-        return fd;
-    }
-}
-```
 
 
 # Okay no more <br> code I promise
