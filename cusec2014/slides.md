@@ -136,7 +136,9 @@ While at Hacker School:
 + 7 of them were on Hacker News
 + 1200 people followed me on Twitter
 + 100,000 people visited my blog
-+ Lots of those blog posts are bad. Nobody cares about the bad posts.
++ It's a great reference for your future self!
++ I learned a lot
++ Lots of those blog posts are bad. Nobody cares about the bad posts!
 
 #
 
