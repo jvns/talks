@@ -9,6 +9,10 @@
         img.image {
             border: none;
         }
+
+        .reveal code {
+            font-family: andale mono;
+        }
     </style>
 </head>
  

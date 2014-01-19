@@ -1,9 +1,9 @@
 # You can be a <br>kernel hacker
 
 by Julia Evans <br>
-[twitter.com/b0rk][twitter]  <br>
-[github.com/jvns][github]  <br>
-[jvns.ca][website]  <br>
+[`twitter.com/b0rk`][twitter]  <br>
+[`github.com/jvns`][github]  <br>
+[`jvns.ca`][website]  <br>
 
 [twitter]: https://github.com/jvns
 [github]:  https://twitter.com/b0rk
