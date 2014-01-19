@@ -81,9 +81,9 @@ Pick one system call and try to understand one thing about it
 
 # 
 
-Linux kernel: LXR, [http://livegrep.com](http://livegrep.com)
+Linux kernel: LXR, [`http://livegrep.com`](http://livegrep.com)
 
-OS X kernel: [http://opensource.apple.com](http://opensource.apple.com)
+OS X kernel: [`http://opensource.apple.com`](http://opensource.apple.com)
 
 # 
 

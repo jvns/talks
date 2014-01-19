@@ -5,6 +5,10 @@
     <title>You Can Be a Kernel Hacker</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
     <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="reveal_js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
     <style>
         img.image {
             border: none;
