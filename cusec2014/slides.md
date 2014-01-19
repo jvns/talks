@@ -128,30 +128,6 @@ Not as scary as it sounds. I promise!
 + Google Summer of Code
 + GNOME Outreach Program for Women
 
-# Blogging = awesome
-
-While at Hacker School:
-
-+ I wrote 50 blog posts
-+ 7 of them were on Hacker News
-+ 1200 people followed me on Twitter
-+ 100,000 people visited my blog
-+ It's a great reference for your future self!
-+ I learned a lot
-+ Lots of those blog posts are bad. Nobody cares about the bad posts!
-
-#
-
-<img src="apple-email.png" class="image">
-
-# Talk to me!
-
-+ Hacker School
-+ All-Girl Hack Night / PyLadies
-+ Data science
-+ Interviewing
-+ Promoting yourself
-
 # Questions?
 
 `http://github.com/jvns` <br>
