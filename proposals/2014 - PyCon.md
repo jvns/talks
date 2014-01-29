@@ -1,6 +1,4 @@
-### Title
-
-Diving into Open Data with IPython Notebook & Pandas
+### Title: Diving into Open Data with IPython Notebook & Pandas
 
 ### Python level
 
