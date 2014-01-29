@@ -50,6 +50,5 @@ The bit about using scikit-learn or PyMC didn't make it into the final
 talk at all.
 
 * The [IPython notebook of the slides](http://bit.ly/pyconca-pandas)
-*
-  [Video of me giving the talk](http://pyvideo.org/video/2330/diving-into-open-data-with-ipython-notebook-pan)
+* [Video of me giving the talk](http://pyvideo.org/video/2330/diving-into-open-data-with-ipython-notebook-pan)
 
