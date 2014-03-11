@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">    
+<head>
+    <meta charset="utf-8">
+    <title>You Can Be a Kernel Hacker</title>
+    <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="reveal_js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <style>
+        img.image {
+            border: none;
+        }
+
+        .reveal code {
+            font-family: andale mono;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="reveal">
+        <div class="slides">
+$body$
+        </div>
+    </div>
+    <script src="reveal_js/lib/js/head.min.js"></script>
+    <script src="reveal_js/js/reveal.min.js"></script>
+    <script>
+        // Required, even if empty.
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            rollingLinks: false,
+            transition: "none",
+            maxScale: 10.0,
+        });
+    </script>
+</body>
+</html>
