@@ -11,12 +11,12 @@ by Julia Evans <br>
 
 # Where we're going
 
-1. WTF is a kernel?
-2. Strategies for getting started with kernel programming
+* What is a kernel????
+* Strategies for getting started with kernel programming
     a. Write a kernel module!
     b. Do an internship
 
-# 1. WTF is a kernel?
+# What is a kernel?!?
 
 # Kernels are <br> just code!
 
@@ -45,7 +45,7 @@ System calls!!!
 + Your kernel does tons of stuff
 + Programs tell it what to do using system calls
 
-# 3. Strategies for getting started
+# Strategies for getting started
 
 # Strategy 1: <br> Write a <br> Linux kernel module
 
