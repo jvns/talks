@@ -24,9 +24,8 @@ by Julia Evans <br>
 
 # System calls
 
-+ execve
 + open
-+ write
++ execve
 + sendto/recvfrom
 
 # How to strace
@@ -76,3 +75,31 @@ $ strace -f -etrace=execve google-chrome
     [/* 55 vars */]) = 0
 ```
 
+# sendto
+
+```
+connect(8, {sa_family=AF_INET, sin_port=htons(9200),
+    sin_addr=inet_addr("10.147.177.170")}, 16) = 0
+sendto(8,
+    "\nB\n5\n3\n(BP-1019336183-10.165.43.39-1400088409498\20\211\200\200\200\4\30\361\7\22\tsnakebite\20\0\30\200\200\200@",
+    75, 0, NULL, 0) = 75
+```
+
+# recvfrom
+
+```
+recvfrom(8, "ot, it's a painting. Thomas Graeme apparently lived in
+the mid-18th century, according to the [[Graeme Park]] article. The
+rationale also says that this image is "used on the biography
+page about him by USHistory.org of Graeme Park." I cannot quite
+figure out what this means, but I am guessing that it means the
+uploader took this image from a page hosted on USHistory.org. A
+painting of a man who lived in the mid-18th century is likely to be
+the public domain, as claimed, but we have no good source", 512, 0,
+NULL, NULL) = 512
+```
+
+# Thanks!
+
+* strace all the things!
+* on OS X / Windows, try **sysdig**
