@@ -43,10 +43,16 @@ access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 
 # open
 
+```
+strace -etrace=open google-chrome
+```
 <img src="consent-to-send-stats.png">
 
 # open
 
+```
+strace -etrace=open google-chrome
+```
 <img src="consent-to-send-stats-censored.png">
 
 # open
@@ -55,3 +61,18 @@ access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 $ cat ~/.config/google-chrome/Consent\ To\ Send\ Stats
 6795275A1128269862CB7A471F5E0228% 
 ```
+
+# execve
+
+```
+$ strace -f -etrace=execve google-chrome
+6116  execve("/opt/google/chrome/chrome", ["/usr/bin/google-chrome"], 
+[/* 52 vars */]) = 0
+6123  execve("/opt/google/chrome/chrome-sandbox", 
+    ["/opt/google/chrome/chrome-sandbox", 
+    "/opt/google/chrome/chrome", 
+    "--type=zygote", 
+    "--enable-crash-reporter=6795275A1128269862CB7A471F5E0228,Ubuntu 12.04.4 LTS"], 
+    [/* 55 vars */]) = 0
+```
+
