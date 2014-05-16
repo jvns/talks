@@ -41,8 +41,19 @@ access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 </section>
 <section data-background="strace-garbage.png">
 
-#
-
 # open
 
-<img src="strace-open-1.png" class="image">
+```
+$ strace -etrace=open google-chrome
+open("/home/bork/.cache/dconf/user", O_RDWR|O_CREAT, 0600) = 10
+open("/home/bork/.config/dconf/user", O_RDONLY) = 10
+open("/home/bork/.config/google-chrome/Consent To Send Stats", O_RDONLY) = 34
+open("/home/bork/.config/google-chrome/Local State", O_RDONLY) = 34
+open("/home/bork/.gtkrc-2.0", O_RDONLY) = 15
+open("/home/bork/.pulse/client.conf", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+open("/home/bork/.pulse-cookie", O_RDWR|O_CREAT|O_NOCTTY|O_CLOEXEC, 0600) = 32
+open("/home/bork/.Xauthority", O_RDONLY) = 12
+open("/home/bork/.Xdefaults-kiwi", O_RDONLY) = -1 ENOENT (No such file or directory)
+```
+
+# 
