@@ -103,3 +103,4 @@ NULL, NULL) = 512
 
 * strace all the things!
 * on OS X / Windows, try **sysdig**
+* blog: http://jvns.ca, @b0rk
