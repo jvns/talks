@@ -99,8 +99,21 @@ the public domain, as claimed, but we have no good source", 512, 0,
 NULL, NULL) = 512
 ```
 
+
+# write
+
++ spy on log files!
+
 # Thanks!
 
 * strace all the things!
 * on OS X / Windows, try **sysdig**
-* blog: http://jvns.ca, @b0rk
+* Notes: [http://bit.ly/strace-notes](http://bit.ly/strace-notes)
+
+[`twitter.com/b0rk`][twitter]  <br>
+[`jvns.ca`][website]  <br>
+
+[twitter]:  https://twitter.com/b0rk
+[website]: http://jvns.ca
+
+

@@ -2,7 +2,7 @@
 <html lang="en">    
 <head>
     <meta charset="utf-8">
-    <title>You Can Be a Kernel Hacker</title>
+    <title>Spying on your programs with strace</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
     <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
