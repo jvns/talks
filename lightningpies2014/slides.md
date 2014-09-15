@@ -14,7 +14,8 @@ by Julia Evans <br>
 * What is a kernel????
 * Strategies for getting started with kernel programming
     a. Write a kernel module!
-    b. Do an internship
+    b. Do a challenge
+    c. Do an internship
 
 # What is a kernel?!?
 
@@ -69,13 +70,16 @@ DEMO DEMO DEMO
 
 # Okay no more <br> code I promise
 
-# Strategy 2: <br> Do a Linux kernel <br> internship
+# Strategy 2: <br> Eudalypta challenge
+
+The problems are hard! but possible.
+
+# Strategy 3: <br> Do a Linux kernel <br> internship
 
 # Linux Internships
 
 + Google Summer of Code
 + GNOME Outreach Program for Women 
-+ (OPEN RIGHT NOW) 
 
 Resources:
 
