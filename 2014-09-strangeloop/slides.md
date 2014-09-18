@@ -159,6 +159,19 @@ NULL, NULL) = 512
 
 <img src="warning.png">
 
+# ftrace: <br> tracing kernel functions
+
+
+# `/proc`
+
+# `/proc`
+
+* run a program
+* delete the executable
+* YOU CAN STILL RECOVER IT 
+
+# Understanding your operating system makes you a better programmer
+
 # OKAY AWESOME LET'S LEARN
 
 # Usual strategies
