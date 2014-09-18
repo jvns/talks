@@ -1,6 +1,7 @@
 # You can be a <br>kernel hacker
 
 by Julia Evans <br>
+Stripe<br>
 [`twitter.com/b0rk`][twitter]  <br>
 [`github.com/jvns`][github]  <br>
 [`jvns.ca`][website]  <br>
@@ -17,6 +18,7 @@ by Julia Evans <br>
 
 + WTF is a kernel?
 + Why should you care?
+    + SO MANY REASONS
 + Strategies for getting started with kernel programming
     a. Strace all the things!
     a. Read some kernel code!
@@ -155,16 +157,28 @@ NULL, NULL) = 512
 
 + spy on log files!
 
+# strace
+
+* what ssh command is my Ruby program running?
+* why is my program using `libblah.so.5` instead of `.so.6`?
+* what data am I sending to Google?
+* WHERE ARE MY LOG FILES?!
+
 # 
 
 <img src="warning.png">
 
+# Understanding your operating system makes you a better programmer
+
 # ftrace: <br> tracing kernel functions
 
+# ftrace
 
-# `/proc`
+* tracking TCP retransmits
 
-# `/proc`
+# /proc
+
+# /proc
 
 * run a program
 * delete the executable
