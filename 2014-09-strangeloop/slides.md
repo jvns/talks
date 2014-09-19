@@ -3,11 +3,10 @@
 by Julia Evans <br>
 Stripe<br>
 [`twitter.com/b0rk`][twitter]  <br>
-[`github.com/jvns`][github]  <br>
 [`jvns.ca`][website]  <br>
 
-[twitter]: https://github.com/jvns
-[github]:  https://twitter.com/b0rk
+[github]: https://github.com/jvns
+[twitter]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
 
 # 
@@ -26,6 +25,8 @@ Stripe<br>
     a. Do the Eudalypta challenge
     a. Write your own operating system
     a. Do an internship
+
+# ONLY LINUX
 
 # WTF is a kernel?
 
@@ -170,6 +171,23 @@ NULL, NULL) = 512
 
 # Understanding your operating system makes you a better programmer
 
+# perf: <br> track L1 cache misses!
+
+# perf
+
+```
+# program designed to be good
+        17,175,214 L1-dcache-misses #   11.48% of all L1-dcache hits  
+       149,568,438 L1-dcache-loads
+# program designed to be bad
+     1,031,902,483 L1-dcache-misses #  193.16% of all L1-dcache hits  
+       534,219,219 L1-dcache-loads
+```
+
+# perf
+
+<img src="flamegraph.svg">
+
 # ftrace: <br> tracing kernel functions
 
 # ftrace
@@ -185,6 +203,8 @@ NULL, NULL) = 512
 * YOU CAN STILL RECOVER IT 
 
 # Understanding your operating system makes you a better programmer
+
+# Treat your programs as a black box
 
 # OKAY AWESOME LET'S LEARN
 
@@ -228,6 +248,8 @@ OS X kernel: [`http://opensource.apple.com`](http://opensource.apple.com)
 
 <img src="chmod-code-crossed-out.png" class="image">
 
+# LWN!
+
 # Strategy 3: <br> Write a <br> Linux kernel module
 
 DEMO DEMO DEMO
@@ -256,6 +278,12 @@ DEMO DEMO DEMO
 
 Not as scary as it sounds. I promise!
 
+# OS blog posts
+
+* after 10 days, I can finally press a key on my keyboard
+* WHY IS MY OPERATING SYSTEM BEING DELETED WHILE IT'S RUNNING
+
+
 # Strategy 5: <br> Do the Eudalypta challenge
 
 # Strategy 6: <br> Do a Linux kernel <br> internship
@@ -264,14 +292,11 @@ Not as scary as it sounds. I promise!
 
 + Google Summer of Code
 + GNOME Outreach Program for Women
++ **Apply now!** Deadline: Oct. 31, 2014
+
+# You can be a kernel hacker
 
 # Questions?
 
-`http://github.com/jvns` <br>
-`http://twitter.com/b0rk` <br>
-`julia@jvns.ca`
-
-
-Resources:
-
-`http://bit.ly/kernelfun`
+[`twitter.com/b0rk`][twitter]  <br>
+[`jvns.ca`][website]
