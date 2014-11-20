@@ -1,15 +1,6 @@
 # Machine learning: the boring parts
 
 by Julia Evans <br>
-[`twitter.com/b0rk`][twitter]  <br>
-[`github.com/jvns`][github]  <br>
-[`jvns.ca`][website]  <br>
-
-[twitter]: https://github.com/jvns
-[github]:  https://twitter.com/b0rk
-[website]: http://jvns.ca
-
-<img src="stripe.png" style="width: 200px" class="image">
 
 # How to not cry when someone asks you about a model you built 2 months ago
 
