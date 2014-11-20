@@ -1,0 +1,619 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" width="700" height="482" onload="init(evt)" viewBox="0 0 700 482" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs >
+	<linearGradient id="background" y1="0" y2="1" x1="0" x2="0" >
+		<stop stop-color="#eeeeee" offset="5%" />
+		<stop stop-color="#eeeeb0" offset="95%" />
+	</linearGradient>
+</defs>
+<style type="text/css">
+	.func_g:hover { stroke:black; stroke-width:0.5; }
+</style>
+<script type="text/ecmascript">
+<![CDATA[
+	var details;
+	function init(evt) { details = document.getElementById("details").firstChild; }
+	function s(info) { details.nodeValue = "Function: " + info; }
+	function c() { details.nodeValue = ' '; }
+]]>
+</script>
+<rect x="0.0" y="0" width="700.0" height="482.0" fill="url(#background)"  />
+<text text-anchor="middle" x="350" y="24" font-size="17" font-family="Verdana" fill="rgb(0,0,0)"  >Flame Graph</text>
+<text text-anchor="" x="10" y="465" font-size="12" font-family="Verdana" fill="rgb(0,0,0)" id="details" > </text>
+<g class="func_g" onmouseover="s('pud_huge (4 samples, 0.63%)')" onmouseout="c()">
+<title>pud_huge (4 samples, 0.63%)</title><rect x="71.9" y="241" width="4.3" height="15.0" fill="rgb(229,21,16)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('___pte_free_tlb (1 samples, 0.16%)')" onmouseout="c()">
+<title>___pte_free_tlb (1 samples, 0.16%)</title><rect x="584.3" y="257" width="1.1" height="15.0" fill="rgb(207,212,13)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_page_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_page_fault (1 samples, 0.16%)</title><rect x="285.4" y="353" width="1.1" height="15.0" fill="rgb(250,46,49)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('get_page_from_freelist (1 samples, 0.16%)')" onmouseout="c()">
+<title>get_page_from_freelist (1 samples, 0.16%)</title><rect x="285.4" y="257" width="1.1" height="15.0" fill="rgb(233,99,41)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('page_remove_rmap (45 samples, 7.06%)')" onmouseout="c()">
+<title>page_remove_rmap (45 samples, 7.06%)</title><rect x="637.7" y="225" width="48.0" height="15.0" fill="rgb(237,217,11)" rx="2" ry="2" />
+<text text-anchor="" x="640.692307692308" y="235.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >page..</text>
+</g>
+<g class="func_g" onmouseover="s('lookup_page_cgroup (3 samples, 0.47%)')" onmouseout="c()">
+<title>lookup_page_cgroup (3 samples, 0.47%)</title><rect x="222.4" y="177" width="3.2" height="15.0" fill="rgb(212,221,50)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('zap_pte_range (76 samples, 11.93%)')" onmouseout="c()">
+<title>zap_pte_range (76 samples, 11.93%)</title><rect x="608.9" y="241" width="81.1" height="15.0" fill="rgb(220,197,52)" rx="2" ry="2" />
+<text text-anchor="" x="611.869701726845" y="251.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >zap_pte_r..</text>
+</g>
+<g class="func_g" onmouseover="s('x86_pmu_enable (5 samples, 0.78%)')" onmouseout="c()">
+<title>x86_pmu_enable (5 samples, 0.78%)</title><rect x="280.1" y="161" width="5.3" height="15.0" fill="rgb(212,49,51)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('finish_task_switch (6 samples, 0.94%)')" onmouseout="c()">
+<title>finish_task_switch (6 samples, 0.94%)</title><rect x="279.0" y="209" width="6.4" height="15.0" fill="rgb(215,229,8)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('perf_event_context_sched_in (5 samples, 0.78%)')" onmouseout="c()">
+<title>perf_event_context_sched_in (5 samples, 0.78%)</title><rect x="280.1" y="177" width="5.3" height="15.0" fill="rgb(233,194,42)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('make_pages_present (241 samples, 37.83%)')" onmouseout="c()">
+<title>make_pages_present (241 samples, 37.83%)</title><rect x="11.1" y="305" width="257.2" height="15.0" fill="rgb(230,79,42)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="315.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >make_pages_present</text>
+</g>
+<g class="func_g" onmouseover="s('find_get_page (46 samples, 7.22%)')" onmouseout="c()">
+<title>find_get_page (46 samples, 7.22%)</title><rect x="126.4" y="193" width="49.1" height="15.0" fill="rgb(211,207,46)" rx="2" ry="2" />
+<text text-anchor="" x="129.357927786499" y="203.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >find..</text>
+</g>
+<g class="func_g" onmouseover="s('free_pgd_range (1 samples, 0.16%)')" onmouseout="c()">
+<title>free_pgd_range (1 samples, 0.16%)</title><rect x="584.3" y="273" width="1.1" height="15.0" fill="rgb(232,56,23)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('radix_tree_lookup_element (12 samples, 1.88%)')" onmouseout="c()">
+<title>radix_tree_lookup_element (12 samples, 1.88%)</title><rect x="162.7" y="161" width="12.8" height="15.0" fill="rgb(227,132,48)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('x86_pmu_enable (6 samples, 0.94%)')" onmouseout="c()">
+<title>x86_pmu_enable (6 samples, 0.94%)</title><rect x="271.5" y="97" width="6.4" height="15.0" fill="rgb(232,36,28)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('call_softirq (1 samples, 0.16%)')" onmouseout="c()">
+<title>call_softirq (1 samples, 0.16%)</title><rect x="76.2" y="177" width="1.1" height="15.0" fill="rgb(250,62,21)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('iwl_rx_queue_update_write_ptr (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwl_rx_queue_update_write_ptr (1 samples, 0.16%)</title><rect x="76.2" y="81" width="1.1" height="15.0" fill="rgb(236,147,24)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('stub_execve (1 samples, 0.16%)')" onmouseout="c()">
+<title>stub_execve (1 samples, 0.16%)</title><rect x="268.3" y="401" width="1.1" height="15.0" fill="rgb(225,133,21)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__alloc_pages_nodemask (1 samples, 0.16%)')" onmouseout="c()">
+<title>__alloc_pages_nodemask (1 samples, 0.16%)</title><rect x="285.4" y="273" width="1.1" height="15.0" fill="rgb(249,204,52)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('unlock_page (19 samples, 2.98%)')" onmouseout="c()">
+<title>unlock_page (19 samples, 2.98%)</title><rect x="229.9" y="209" width="20.3" height="15.0" fill="rgb(210,132,14)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__dec_zone_state (2 samples, 0.31%)')" onmouseout="c()">
+<title>__dec_zone_state (2 samples, 0.31%)</title><rect x="655.8" y="209" width="2.2" height="15.0" fill="rgb(216,185,22)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mem_cgroup_update_page_stat (34 samples, 5.34%)')" onmouseout="c()">
+<title>mem_cgroup_update_page_stat (34 samples, 5.34%)</title><rect x="189.3" y="193" width="36.3" height="15.0" fill="rgb(205,201,17)" rx="2" ry="2" />
+<text text-anchor="" x="192.340659340659" y="203.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >mem..</text>
+</g>
+<g class="func_g" onmouseover="s('page_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>page_fault (1 samples, 0.16%)</title><rect x="285.4" y="369" width="1.1" height="15.0" fill="rgb(245,57,32)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__wake_up_bit (5 samples, 0.78%)')" onmouseout="c()">
+<title>__wake_up_bit (5 samples, 0.78%)</title><rect x="240.6" y="193" width="5.3" height="15.0" fill="rgb(207,63,43)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_execve (9 samples, 1.41%)')" onmouseout="c()">
+<title>do_execve (9 samples, 1.41%)</title><rect x="269.4" y="289" width="9.6" height="15.0" fill="rgb(231,46,30)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('vfs_read (1 samples, 0.16%)')" onmouseout="c()">
+<title>vfs_read (1 samples, 0.16%)</title><rect x="270.5" y="225" width="1.0" height="15.0" fill="rgb(222,125,6)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('security_file_permission (1 samples, 0.16%)')" onmouseout="c()">
+<title>security_file_permission (1 samples, 0.16%)</title><rect x="270.5" y="193" width="1.0" height="15.0" fill="rgb(206,150,48)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__schedule (7 samples, 1.10%)')" onmouseout="c()">
+<title>__schedule (7 samples, 1.10%)</title><rect x="271.5" y="161" width="7.5" height="15.0" fill="rgb(225,131,48)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('get_user_pages (241 samples, 37.83%)')" onmouseout="c()">
+<title>get_user_pages (241 samples, 37.83%)</title><rect x="11.1" y="289" width="257.2" height="15.0" fill="rgb(211,130,48)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="299.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >get_user_pages</text>
+</g>
+<g class="func_g" onmouseover="s('_cond_resched (1 samples, 0.16%)')" onmouseout="c()">
+<title>_cond_resched (1 samples, 0.16%)</title><rect x="96.5" y="209" width="1.0" height="15.0" fill="rgb(220,10,54)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__do_softirq (1 samples, 0.16%)')" onmouseout="c()">
+<title>__do_softirq (1 samples, 0.16%)</title><rect x="76.2" y="161" width="1.1" height="15.0" fill="rgb(213,38,6)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_exit (99 samples, 15.54%)')" onmouseout="c()">
+<title>do_exit (99 samples, 15.54%)</title><rect x="584.3" y="369" width="105.7" height="15.0" fill="rgb(246,139,4)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="379.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_exit</text>
+</g>
+<g class="func_g" onmouseover="s('bprm_mm_init (1 samples, 0.16%)')" onmouseout="c()">
+<title>bprm_mm_init (1 samples, 0.16%)</title><rect x="269.4" y="257" width="1.1" height="15.0" fill="rgb(249,204,52)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_IRQ (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_IRQ (1 samples, 0.16%)</title><rect x="76.2" y="225" width="1.1" height="15.0" fill="rgb(213,211,25)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('native_write_msr_safe (5 samples, 0.78%)')" onmouseout="c()">
+<title>native_write_msr_safe (5 samples, 0.78%)</title><rect x="280.1" y="129" width="5.3" height="15.0" fill="rgb(235,70,6)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('wait_for_completion (7 samples, 1.10%)')" onmouseout="c()">
+<title>wait_for_completion (7 samples, 1.10%)</title><rect x="271.5" y="225" width="7.5" height="15.0" fill="rgb(249,50,4)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('load_elf_binary (1 samples, 0.16%)')" onmouseout="c()">
+<title>load_elf_binary (1 samples, 0.16%)</title><rect x="268.3" y="321" width="1.1" height="15.0" fill="rgb(254,188,24)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('alloc_pages_vma (1 samples, 0.16%)')" onmouseout="c()">
+<title>alloc_pages_vma (1 samples, 0.16%)</title><rect x="285.4" y="289" width="1.1" height="15.0" fill="rgb(215,155,52)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('handle_pte_fault (157 samples, 24.65%)')" onmouseout="c()">
+<title>handle_pte_fault (157 samples, 24.65%)</title><rect x="85.8" y="241" width="167.6" height="15.0" fill="rgb(228,65,2)" rx="2" ry="2" />
+<text text-anchor="" x="88.7927786499215" y="251.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >handle_pte_fault</text>
+</g>
+<g class="func_g" onmouseover="s('sys_exit_group (99 samples, 15.54%)')" onmouseout="c()">
+<title>sys_exit_group (99 samples, 15.54%)</title><rect x="584.3" y="401" width="105.7" height="15.0" fill="rgb(227,99,54)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="411.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >sys_exit_group</text>
+</g>
+<g class="func_g" onmouseover="s('iwl_release_nic_access (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwl_release_nic_access (1 samples, 0.16%)</title><rect x="76.2" y="49" width="1.1" height="15.0" fill="rgb(214,102,30)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('free_hot_cold_page_list (1 samples, 0.16%)')" onmouseout="c()">
+<title>free_hot_cold_page_list (1 samples, 0.16%)</title><rect x="607.8" y="225" width="1.1" height="15.0" fill="rgb(233,139,38)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mark_page_accessed (2 samples, 0.31%)')" onmouseout="c()">
+<title>mark_page_accessed (2 samples, 0.31%)</title><rect x="68.7" y="241" width="2.1" height="15.0" fill="rgb(207,117,28)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('page_waitqueue (4 samples, 0.63%)')" onmouseout="c()">
+<title>page_waitqueue (4 samples, 0.63%)</title><rect x="225.6" y="209" width="4.3" height="15.0" fill="rgb(252,83,12)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('zap_pte_range (1 samples, 0.16%)')" onmouseout="c()">
+<title>zap_pte_range (1 samples, 0.16%)</title><rect x="268.3" y="177" width="1.1" height="15.0" fill="rgb(210,10,26)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('prepare_binprm (1 samples, 0.16%)')" onmouseout="c()">
+<title>prepare_binprm (1 samples, 0.16%)</title><rect x="270.5" y="257" width="1.0" height="15.0" fill="rgb(254,147,19)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('[unknown] (1 samples, 0.16%)')" onmouseout="c()">
+<title>[unknown] (1 samples, 0.16%)</title><rect x="10.0" y="401" width="1.1" height="15.0" fill="rgb(219,193,9)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('stop_one_cpu (7 samples, 1.10%)')" onmouseout="c()">
+<title>stop_one_cpu (7 samples, 1.10%)</title><rect x="271.5" y="241" width="7.5" height="15.0" fill="rgb(221,128,1)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('_raw_spin_lock (12 samples, 1.88%)')" onmouseout="c()">
+<title>_raw_spin_lock (12 samples, 1.88%)</title><rect x="55.9" y="241" width="12.8" height="15.0" fill="rgb(233,186,13)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('filemap_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>filemap_fault (1 samples, 0.16%)</title><rect x="10.0" y="289" width="1.1" height="15.0" fill="rgb(248,53,39)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('all (637 samples, 100%)')" onmouseout="c()">
+<title>all (637 samples, 100%)</title><rect x="10.0" y="433" width="680.0" height="15.0" fill="rgb(220,68,36)" rx="2" ry="2" />
+<text text-anchor="" x="13" y="443.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  ></text>
+</g>
+<g class="func_g" onmouseover="s('__execve (1 samples, 0.16%)')" onmouseout="c()">
+<title>__execve (1 samples, 0.16%)</title><rect x="268.3" y="417" width="1.1" height="15.0" fill="rgb(219,55,53)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('intel_pmu_enable_all (5 samples, 0.78%)')" onmouseout="c()">
+<title>intel_pmu_enable_all (5 samples, 0.78%)</title><rect x="280.1" y="145" width="5.3" height="15.0" fill="rgb(240,122,37)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('unmap_single_vma (1 samples, 0.16%)')" onmouseout="c()">
+<title>unmap_single_vma (1 samples, 0.16%)</title><rect x="268.3" y="209" width="1.1" height="15.0" fill="rgb(227,1,53)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('tlb_finish_mmu (22 samples, 3.45%)')" onmouseout="c()">
+<title>tlb_finish_mmu (22 samples, 3.45%)</title><rect x="585.4" y="289" width="23.5" height="15.0" fill="rgb(247,131,46)" rx="2" ry="2" />
+<text text-anchor="" x="588.384615384615" y="299.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >t..</text>
+</g>
+<g class="func_g" onmouseover="s('handle_mm_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>handle_mm_fault (1 samples, 0.16%)</title><rect x="285.4" y="337" width="1.1" height="15.0" fill="rgb(227,143,23)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mm_alloc (1 samples, 0.16%)')" onmouseout="c()">
+<title>mm_alloc (1 samples, 0.16%)</title><rect x="269.4" y="241" width="1.1" height="15.0" fill="rgb(245,142,43)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__do_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>__do_fault (1 samples, 0.16%)</title><rect x="10.0" y="305" width="1.1" height="15.0" fill="rgb(235,195,19)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('handle_mm_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>handle_mm_fault (1 samples, 0.16%)</title><rect x="10.0" y="337" width="1.1" height="15.0" fill="rgb(250,214,31)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_softirq (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_softirq (1 samples, 0.16%)</title><rect x="76.2" y="193" width="1.1" height="15.0" fill="rgb(226,79,15)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('perf_ctx_unlock (1 samples, 0.16%)')" onmouseout="c()">
+<title>perf_ctx_unlock (1 samples, 0.16%)</title><rect x="279.0" y="177" width="1.1" height="15.0" fill="rgb(250,77,18)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('unmap_vmas (1 samples, 0.16%)')" onmouseout="c()">
+<title>unmap_vmas (1 samples, 0.16%)</title><rect x="268.3" y="225" width="1.1" height="15.0" fill="rgb(254,160,21)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mmput (99 samples, 15.54%)')" onmouseout="c()">
+<title>mmput (99 samples, 15.54%)</title><rect x="584.3" y="337" width="105.7" height="15.0" fill="rgb(245,47,0)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="347.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >mmput</text>
+</g>
+<g class="func_g" onmouseover="s('iwl_irq_tasklet (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwl_irq_tasklet (1 samples, 0.16%)</title><rect x="76.2" y="129" width="1.1" height="15.0" fill="rgb(219,162,11)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('schedule (6 samples, 0.94%)')" onmouseout="c()">
+<title>schedule (6 samples, 0.94%)</title><rect x="279.0" y="241" width="6.4" height="15.0" fill="rgb(226,215,49)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('page_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>page_fault (1 samples, 0.16%)</title><rect x="10.0" y="369" width="1.1" height="15.0" fill="rgb(224,66,42)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('exit_mmap (1 samples, 0.16%)')" onmouseout="c()">
+<title>exit_mmap (1 samples, 0.16%)</title><rect x="268.3" y="241" width="1.1" height="15.0" fill="rgb(233,193,49)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('flush_old_exec (1 samples, 0.16%)')" onmouseout="c()">
+<title>flush_old_exec (1 samples, 0.16%)</title><rect x="268.3" y="305" width="1.1" height="15.0" fill="rgb(215,8,45)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('follow_page (2 samples, 0.31%)')" onmouseout="c()">
+<title>follow_page (2 samples, 0.31%)</title><rect x="265.1" y="273" width="2.2" height="15.0" fill="rgb(210,107,21)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mem_cgroup_update_page_stat (1 samples, 0.16%)')" onmouseout="c()">
+<title>mem_cgroup_update_page_stat (1 samples, 0.16%)</title><rect x="636.6" y="225" width="1.1" height="15.0" fill="rgb(233,48,4)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('ret_from_intr (1 samples, 0.16%)')" onmouseout="c()">
+<title>ret_from_intr (1 samples, 0.16%)</title><rect x="76.2" y="241" width="1.1" height="15.0" fill="rgb(221,104,0)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('lookup_page_cgroup (5 samples, 0.78%)')" onmouseout="c()">
+<title>lookup_page_cgroup (5 samples, 0.78%)</title><rect x="680.4" y="193" width="5.3" height="15.0" fill="rgb(227,168,8)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('exit_mm (99 samples, 15.54%)')" onmouseout="c()">
+<title>exit_mm (99 samples, 15.54%)</title><rect x="584.3" y="353" width="105.7" height="15.0" fill="rgb(207,165,34)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="363.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >exit_mm</text>
+</g>
+<g class="func_g" onmouseover="s('vfs_read (6 samples, 0.94%)')" onmouseout="c()">
+<title>vfs_read (6 samples, 0.94%)</title><rect x="279.0" y="305" width="6.4" height="15.0" fill="rgb(225,133,27)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('tasklet_action (1 samples, 0.16%)')" onmouseout="c()">
+<title>tasklet_action (1 samples, 0.16%)</title><rect x="76.2" y="145" width="1.1" height="15.0" fill="rgb(216,31,24)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__tlb_remove_page (1 samples, 0.16%)')" onmouseout="c()">
+<title>__tlb_remove_page (1 samples, 0.16%)</title><rect x="634.5" y="225" width="1.1" height="15.0" fill="rgb(239,102,13)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('unmap_page_range (1 samples, 0.16%)')" onmouseout="c()">
+<title>unmap_page_range (1 samples, 0.16%)</title><rect x="268.3" y="193" width="1.1" height="15.0" fill="rgb(231,32,32)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__do_fault (153 samples, 24.02%)')" onmouseout="c()">
+<title>__do_fault (153 samples, 24.02%)</title><rect x="86.9" y="225" width="163.3" height="15.0" fill="rgb(224,190,1)" rx="2" ry="2" />
+<text text-anchor="" x="89.8602825745683" y="235.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__do_fault</text>
+</g>
+<g class="func_g" onmouseover="s('[unknown] (9 samples, 1.41%)')" onmouseout="c()">
+<title>[unknown] (9 samples, 1.41%)</title><rect x="269.4" y="353" width="9.6" height="15.0" fill="rgb(228,22,13)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('add_mm_counter_fast (1 samples, 0.16%)')" onmouseout="c()">
+<title>add_mm_counter_fast (1 samples, 0.16%)</title><rect x="106.1" y="209" width="1.0" height="15.0" fill="rgb(208,19,37)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('irq_exit (1 samples, 0.16%)')" onmouseout="c()">
+<title>irq_exit (1 samples, 0.16%)</title><rect x="76.2" y="209" width="1.1" height="15.0" fill="rgb(248,157,40)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('wait_for_common (7 samples, 1.10%)')" onmouseout="c()">
+<title>wait_for_common (7 samples, 1.10%)</title><rect x="271.5" y="209" width="7.5" height="15.0" fill="rgb(245,77,15)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_sync_read (6 samples, 0.94%)')" onmouseout="c()">
+<title>do_sync_read (6 samples, 0.94%)</title><rect x="279.0" y="289" width="6.4" height="15.0" fill="rgb(224,118,22)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('zone_page_state_add (1 samples, 0.16%)')" onmouseout="c()">
+<title>zone_page_state_add (1 samples, 0.16%)</title><rect x="654.8" y="177" width="1.0" height="15.0" fill="rgb(246,64,36)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('pick_next_task_stop (1 samples, 0.16%)')" onmouseout="c()">
+<title>pick_next_task_stop (1 samples, 0.16%)</title><rect x="277.9" y="145" width="1.1" height="15.0" fill="rgb(227,158,4)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('vm_normal_page (4 samples, 0.63%)')" onmouseout="c()">
+<title>vm_normal_page (4 samples, 0.63%)</title><rect x="685.7" y="225" width="4.3" height="15.0" fill="rgb(253,107,50)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('system_call_fastpath (241 samples, 37.83%)')" onmouseout="c()">
+<title>system_call_fastpath (241 samples, 37.83%)</title><rect x="11.1" y="401" width="257.2" height="15.0" fill="rgb(230,195,26)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="411.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >system_call_fastpath</text>
+</g>
+<g class="func_g" onmouseover="s('__init_misc (1 samples, 0.16%)')" onmouseout="c()">
+<title>__init_misc (1 samples, 0.16%)</title><rect x="10.0" y="385" width="1.1" height="15.0" fill="rgb(223,183,9)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__inc_zone_page_state (3 samples, 0.47%)')" onmouseout="c()">
+<title>__inc_zone_page_state (3 samples, 0.47%)</title><rect x="185.1" y="193" width="3.2" height="15.0" fill="rgb(221,172,26)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('_dl_sysdep_start (1 samples, 0.16%)')" onmouseout="c()">
+<title>_dl_sysdep_start (1 samples, 0.16%)</title><rect x="285.4" y="417" width="1.1" height="15.0" fill="rgb(248,203,51)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('vm_normal_page (1 samples, 0.16%)')" onmouseout="c()">
+<title>vm_normal_page (1 samples, 0.16%)</title><rect x="264.1" y="257" width="1.0" height="15.0" fill="rgb(238,15,41)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('unmap_single_vma (76 samples, 11.93%)')" onmouseout="c()">
+<title>unmap_single_vma (76 samples, 11.93%)</title><rect x="608.9" y="273" width="81.1" height="15.0" fill="rgb(232,159,21)" rx="2" ry="2" />
+<text text-anchor="" x="611.869701726845" y="283.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >unmap_sin..</text>
+</g>
+<g class="func_g" onmouseover="s('iwl_trans_pcie_read32 (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwl_trans_pcie_read32 (1 samples, 0.16%)</title><rect x="76.2" y="33" width="1.1" height="15.0" fill="rgb(221,35,25)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('page_add_file_rmap (47 samples, 7.38%)')" onmouseout="c()">
+<title>page_add_file_rmap (47 samples, 7.38%)</title><rect x="175.5" y="209" width="50.1" height="15.0" fill="rgb(242,154,41)" rx="2" ry="2" />
+<text text-anchor="" x="178.463108320251" y="219.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >page_..</text>
+</g>
+<g class="func_g" onmouseover="s('do_group_exit (99 samples, 15.54%)')" onmouseout="c()">
+<title>do_group_exit (99 samples, 15.54%)</title><rect x="584.3" y="385" width="105.7" height="15.0" fill="rgb(236,85,11)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="395.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_group_exit</text>
+</g>
+<g class="func_g" onmouseover="s('system_call_fastpath (99 samples, 15.54%)')" onmouseout="c()">
+<title>system_call_fastpath (99 samples, 15.54%)</title><rect x="584.3" y="417" width="105.7" height="15.0" fill="rgb(216,79,35)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="427.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >system_call_..</text>
+</g>
+<g class="func_g" onmouseover="s('sys_execve (9 samples, 1.41%)')" onmouseout="c()">
+<title>sys_execve (9 samples, 1.41%)</title><rect x="269.4" y="305" width="9.6" height="15.0" fill="rgb(215,199,16)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('iwlagn_rx_queue_restock (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwlagn_rx_queue_restock (1 samples, 0.16%)</title><rect x="76.2" y="97" width="1.1" height="15.0" fill="rgb(221,65,7)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('sys_mmap_pgoff (241 samples, 37.83%)')" onmouseout="c()">
+<title>sys_mmap_pgoff (241 samples, 37.83%)</title><rect x="11.1" y="369" width="257.2" height="15.0" fill="rgb(230,224,10)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="379.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >sys_mmap_pgoff</text>
+</g>
+<g class="func_g" onmouseover="s('native_set_pte_at (1 samples, 0.16%)')" onmouseout="c()">
+<title>native_set_pte_at (1 samples, 0.16%)</title><rect x="252.3" y="225" width="1.1" height="15.0" fill="rgb(214,10,39)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('release_pages (10 samples, 1.57%)')" onmouseout="c()">
+<title>release_pages (10 samples, 1.57%)</title><rect x="598.2" y="241" width="10.7" height="15.0" fill="rgb(231,183,1)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('exit_mmap (99 samples, 15.54%)')" onmouseout="c()">
+<title>exit_mmap (99 samples, 15.54%)</title><rect x="584.3" y="305" width="105.7" height="15.0" fill="rgb(231,21,8)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="315.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >exit_mmap</text>
+</g>
+<g class="func_g" onmouseover="s('finish_task_switch (6 samples, 0.94%)')" onmouseout="c()">
+<title>finish_task_switch (6 samples, 0.94%)</title><rect x="271.5" y="145" width="6.4" height="15.0" fill="rgb(250,197,13)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('_raw_spin_lock (8 samples, 1.26%)')" onmouseout="c()">
+<title>_raw_spin_lock (8 samples, 1.26%)</title><rect x="97.5" y="209" width="8.6" height="15.0" fill="rgb(226,178,40)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('unmap_page_range (76 samples, 11.93%)')" onmouseout="c()">
+<title>unmap_page_range (76 samples, 11.93%)</title><rect x="608.9" y="257" width="81.1" height="15.0" fill="rgb(213,229,41)" rx="2" ry="2" />
+<text text-anchor="" x="611.869701726845" y="267.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >unmap_pag..</text>
+</g>
+<g class="func_g" onmouseover="s('do_execve_common.isra.30 (9 samples, 1.41%)')" onmouseout="c()">
+<title>do_execve_common.isra.30 (9 samples, 1.41%)</title><rect x="269.4" y="273" width="9.6" height="15.0" fill="rgb(244,151,27)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('perf_event_context_sched_in (6 samples, 0.94%)')" onmouseout="c()">
+<title>perf_event_context_sched_in (6 samples, 0.94%)</title><rect x="271.5" y="113" width="6.4" height="15.0" fill="rgb(231,130,14)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('rw_verify_area (1 samples, 0.16%)')" onmouseout="c()">
+<title>rw_verify_area (1 samples, 0.16%)</title><rect x="270.5" y="209" width="1.0" height="15.0" fill="rgb(222,158,3)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('intel_pmu_enable_all (6 samples, 0.94%)')" onmouseout="c()">
+<title>intel_pmu_enable_all (6 samples, 0.94%)</title><rect x="271.5" y="81" width="6.4" height="15.0" fill="rgb(215,119,18)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('free_pages_and_swap_cache (22 samples, 3.45%)')" onmouseout="c()">
+<title>free_pages_and_swap_cache (22 samples, 3.45%)</title><rect x="585.4" y="257" width="23.5" height="15.0" fill="rgb(215,98,29)" rx="2" ry="2" />
+<text text-anchor="" x="588.384615384615" y="267.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >f..</text>
+</g>
+<g class="func_g" onmouseover="s('pte_offset_kernel (2 samples, 0.31%)')" onmouseout="c()">
+<title>pte_offset_kernel (2 samples, 0.31%)</title><rect x="259.8" y="257" width="2.1" height="15.0" fill="rgb(235,80,53)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('dl_main (1 samples, 0.16%)')" onmouseout="c()">
+<title>dl_main (1 samples, 0.16%)</title><rect x="285.4" y="401" width="1.1" height="15.0" fill="rgb(223,50,38)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__ticket_spin_unlock (1 samples, 0.16%)')" onmouseout="c()">
+<title>__ticket_spin_unlock (1 samples, 0.16%)</title><rect x="250.2" y="225" width="1.1" height="15.0" fill="rgb(253,9,32)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('search_binary_handler (1 samples, 0.16%)')" onmouseout="c()">
+<title>search_binary_handler (1 samples, 0.16%)</title><rect x="268.3" y="337" width="1.1" height="15.0" fill="rgb(213,180,31)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('radix_tree_lookup_slot (12 samples, 1.88%)')" onmouseout="c()">
+<title>radix_tree_lookup_slot (12 samples, 1.88%)</title><rect x="162.7" y="177" width="12.8" height="15.0" fill="rgb(213,132,33)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mmap_region (241 samples, 37.83%)')" onmouseout="c()">
+<title>mmap_region (241 samples, 37.83%)</title><rect x="11.1" y="321" width="257.2" height="15.0" fill="rgb(209,40,38)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="331.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >mmap_region</text>
+</g>
+<g class="func_g" onmouseover="s('do_mmap_pgoff (241 samples, 37.83%)')" onmouseout="c()">
+<title>do_mmap_pgoff (241 samples, 37.83%)</title><rect x="11.1" y="337" width="257.2" height="15.0" fill="rgb(230,215,48)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="347.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >do_mmap_pgoff</text>
+</g>
+<g class="func_g" onmouseover="s('pipe_wait (6 samples, 0.94%)')" onmouseout="c()">
+<title>pipe_wait (6 samples, 0.94%)</title><rect x="279.0" y="257" width="6.4" height="15.0" fill="rgb(243,176,53)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mmput (1 samples, 0.16%)')" onmouseout="c()">
+<title>mmput (1 samples, 0.16%)</title><rect x="268.3" y="273" width="1.1" height="15.0" fill="rgb(226,177,46)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mem_cgroup_count_vm_event (2 samples, 0.31%)')" onmouseout="c()">
+<title>mem_cgroup_count_vm_event (2 samples, 0.31%)</title><rect x="256.6" y="257" width="2.1" height="15.0" fill="rgb(208,67,54)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('sched_exec (7 samples, 1.10%)')" onmouseout="c()">
+<title>sched_exec (7 samples, 1.10%)</title><rect x="271.5" y="257" width="7.5" height="15.0" fill="rgb(234,218,11)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mem_cgroup_update_page_stat (26 samples, 4.08%)')" onmouseout="c()">
+<title>mem_cgroup_update_page_stat (26 samples, 4.08%)</title><rect x="658.0" y="209" width="27.7" height="15.0" fill="rgb(216,55,7)" rx="2" ry="2" />
+<text text-anchor="" x="660.974882260597" y="219.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >m..</text>
+</g>
+<g class="func_g" onmouseover="s('vm_mmap_pgoff (241 samples, 37.83%)')" onmouseout="c()">
+<title>vm_mmap_pgoff (241 samples, 37.83%)</title><rect x="11.1" y="353" width="257.2" height="15.0" fill="rgb(213,14,4)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="363.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >vm_mmap_pgoff</text>
+</g>
+<g class="func_g" onmouseover="s('__ticket_spin_lock (10 samples, 1.57%)')" onmouseout="c()">
+<title>__ticket_spin_lock (10 samples, 1.57%)</title><rect x="58.0" y="225" width="10.7" height="15.0" fill="rgb(233,92,42)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('PageHuge (1 samples, 0.16%)')" onmouseout="c()">
+<title>PageHuge (1 samples, 0.16%)</title><rect x="651.6" y="209" width="1.0" height="15.0" fill="rgb(231,6,15)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__libc_start_main (15 samples, 2.35%)')" onmouseout="c()">
+<title>__libc_start_main (15 samples, 2.35%)</title><rect x="269.4" y="417" width="16.0" height="15.0" fill="rgb(225,16,29)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__read_nocancel (6 samples, 0.94%)')" onmouseout="c()">
+<title>__read_nocancel (6 samples, 0.94%)</title><rect x="279.0" y="353" width="6.4" height="15.0" fill="rgb(209,125,0)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('native_write_msr_safe (6 samples, 0.94%)')" onmouseout="c()">
+<title>native_write_msr_safe (6 samples, 0.94%)</title><rect x="271.5" y="65" width="6.4" height="15.0" fill="rgb(219,173,25)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mmput.part.20 (99 samples, 15.54%)')" onmouseout="c()">
+<title>mmput.part.20 (99 samples, 15.54%)</title><rect x="584.3" y="321" width="105.7" height="15.0" fill="rgb(206,151,16)" rx="2" ry="2" />
+<text text-anchor="" x="587.317111459969" y="331.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >mmput.part.20</text>
+</g>
+<g class="func_g" onmouseover="s('unmap_vmas (76 samples, 11.93%)')" onmouseout="c()">
+<title>unmap_vmas (76 samples, 11.93%)</title><rect x="608.9" y="289" width="81.1" height="15.0" fill="rgb(223,55,9)" rx="2" ry="2" />
+<text text-anchor="" x="611.869701726845" y="299.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >unmap_vmas</text>
+</g>
+<g class="func_g" onmouseover="s('handle_pte_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>handle_pte_fault (1 samples, 0.16%)</title><rect x="255.5" y="257" width="1.1" height="15.0" fill="rgb(231,135,8)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('handle_mm_fault (167 samples, 26.22%)')" onmouseout="c()">
+<title>handle_mm_fault (167 samples, 26.22%)</title><rect x="77.3" y="257" width="178.2" height="15.0" fill="rgb(214,7,45)" rx="2" ry="2" />
+<text text-anchor="" x="80.2527472527473" y="267.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >handle_mm_fault</text>
+</g>
+<g class="func_g" onmouseover="s('exec_mmap (1 samples, 0.16%)')" onmouseout="c()">
+<title>exec_mmap (1 samples, 0.16%)</title><rect x="268.3" y="289" width="1.1" height="15.0" fill="rgb(231,107,45)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__cond_resched (7 samples, 1.10%)')" onmouseout="c()">
+<title>__cond_resched (7 samples, 1.10%)</title><rect x="271.5" y="177" width="7.5" height="15.0" fill="rgb(230,179,19)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__inc_zone_state (2 samples, 0.31%)')" onmouseout="c()">
+<title>__inc_zone_state (2 samples, 0.31%)</title><rect x="186.1" y="177" width="2.2" height="15.0" fill="rgb(214,39,50)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__GI___mmap64 (241 samples, 37.83%)')" onmouseout="c()">
+<title>__GI___mmap64 (241 samples, 37.83%)</title><rect x="11.1" y="417" width="257.2" height="15.0" fill="rgb(252,22,13)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="427.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__GI___mmap64</text>
+</g>
+<g class="func_g" onmouseover="s('[unknown] (1 samples, 0.16%)')" onmouseout="c()">
+<title>[unknown] (1 samples, 0.16%)</title><rect x="10.0" y="417" width="1.1" height="15.0" fill="rgb(212,105,33)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('pmd_huge (1 samples, 0.16%)')" onmouseout="c()">
+<title>pmd_huge (1 samples, 0.16%)</title><rect x="70.8" y="241" width="1.1" height="15.0" fill="rgb(216,186,37)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_anonymous_page.isra.38 (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_anonymous_page.isra.38 (1 samples, 0.16%)</title><rect x="285.4" y="305" width="1.1" height="15.0" fill="rgb(236,186,35)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('handle_pte_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>handle_pte_fault (1 samples, 0.16%)</title><rect x="285.4" y="321" width="1.1" height="15.0" fill="rgb(242,105,45)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__fsnotify_parent (1 samples, 0.16%)')" onmouseout="c()">
+<title>__fsnotify_parent (1 samples, 0.16%)</title><rect x="270.5" y="177" width="1.0" height="15.0" fill="rgb(248,72,15)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__execve (9 samples, 1.41%)')" onmouseout="c()">
+<title>__execve (9 samples, 1.41%)</title><rect x="269.4" y="337" width="9.6" height="15.0" fill="rgb(243,94,19)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__ticket_spin_unlock (6 samples, 0.94%)')" onmouseout="c()">
+<title>__ticket_spin_unlock (6 samples, 0.94%)</title><rect x="49.5" y="241" width="6.4" height="15.0" fill="rgb(232,39,51)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('sys_read (6 samples, 0.94%)')" onmouseout="c()">
+<title>sys_read (6 samples, 0.94%)</title><rect x="279.0" y="321" width="6.4" height="15.0" fill="rgb(214,46,44)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('handle_mm_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>handle_mm_fault (1 samples, 0.16%)</title><rect x="267.3" y="273" width="1.0" height="15.0" fill="rgb(254,37,3)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mark_page_accessed (1 samples, 0.16%)')" onmouseout="c()">
+<title>mark_page_accessed (1 samples, 0.16%)</title><rect x="635.6" y="225" width="1.0" height="15.0" fill="rgb(236,207,1)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('clear_page_c_e (1 samples, 0.16%)')" onmouseout="c()">
+<title>clear_page_c_e (1 samples, 0.16%)</title><rect x="285.4" y="241" width="1.1" height="15.0" fill="rgb(225,189,31)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mem_cgroup_count_vm_event (2 samples, 0.31%)')" onmouseout="c()">
+<title>mem_cgroup_count_vm_event (2 samples, 0.31%)</title><rect x="253.4" y="241" width="2.1" height="15.0" fill="rgb(219,225,51)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('_cond_resched (7 samples, 1.10%)')" onmouseout="c()">
+<title>_cond_resched (7 samples, 1.10%)</title><rect x="271.5" y="193" width="7.5" height="15.0" fill="rgb(254,92,42)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('tlb_flush_mmu (22 samples, 3.45%)')" onmouseout="c()">
+<title>tlb_flush_mmu (22 samples, 3.45%)</title><rect x="585.4" y="273" width="23.5" height="15.0" fill="rgb(242,121,15)" rx="2" ry="2" />
+<text text-anchor="" x="588.384615384615" y="283.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >t..</text>
+</g>
+<g class="func_g" onmouseover="s('sys_mmap (241 samples, 37.83%)')" onmouseout="c()">
+<title>sys_mmap (241 samples, 37.83%)</title><rect x="11.1" y="385" width="257.2" height="15.0" fill="rgb(231,47,46)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="395.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >sys_mmap</text>
+</g>
+<g class="func_g" onmouseover="s('system_call_fastpath (6 samples, 0.94%)')" onmouseout="c()">
+<title>system_call_fastpath (6 samples, 0.94%)</title><rect x="279.0" y="337" width="6.4" height="15.0" fill="rgb(231,39,21)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__ticket_spin_unlock (1 samples, 0.16%)')" onmouseout="c()">
+<title>__ticket_spin_unlock (1 samples, 0.16%)</title><rect x="17.5" y="257" width="1.0" height="15.0" fill="rgb(234,206,41)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_execve_common.isra.30 (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_execve_common.isra.30 (1 samples, 0.16%)</title><rect x="268.3" y="353" width="1.1" height="15.0" fill="rgb(227,193,14)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('stub_execve (9 samples, 1.41%)')" onmouseout="c()">
+<title>stub_execve (9 samples, 1.41%)</title><rect x="269.4" y="321" width="9.6" height="15.0" fill="rgb(231,12,26)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__get_user_pages (238 samples, 37.36%)')" onmouseout="c()">
+<title>__get_user_pages (238 samples, 37.36%)</title><rect x="11.1" y="273" width="254.0" height="15.0" fill="rgb(245,118,8)" rx="2" ry="2" />
+<text text-anchor="" x="14.0675039246468" y="283.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >__get_user_pages</text>
+</g>
+<g class="func_g" onmouseover="s('pipe_read (6 samples, 0.94%)')" onmouseout="c()">
+<title>pipe_read (6 samples, 0.94%)</title><rect x="279.0" y="273" width="6.4" height="15.0" fill="rgb(205,183,50)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('_dl_init_paths (1 samples, 0.16%)')" onmouseout="c()">
+<title>_dl_init_paths (1 samples, 0.16%)</title><rect x="285.4" y="385" width="1.1" height="15.0" fill="rgb(210,103,39)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('filemap_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>filemap_fault (1 samples, 0.16%)</title><rect x="251.3" y="225" width="1.0" height="15.0" fill="rgb(226,0,41)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('do_page_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_page_fault (1 samples, 0.16%)</title><rect x="10.0" y="353" width="1.1" height="15.0" fill="rgb(227,153,34)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__perf_event_task_sched_in (6 samples, 0.94%)')" onmouseout="c()">
+<title>__perf_event_task_sched_in (6 samples, 0.94%)</title><rect x="279.0" y="193" width="6.4" height="15.0" fill="rgb(226,115,30)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('iwl_write_direct32 (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwl_write_direct32 (1 samples, 0.16%)</title><rect x="76.2" y="65" width="1.1" height="15.0" fill="rgb(241,134,1)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('lookup_page_cgroup (1 samples, 0.16%)')" onmouseout="c()">
+<title>lookup_page_cgroup (1 samples, 0.16%)</title><rect x="188.3" y="193" width="1.0" height="15.0" fill="rgb(253,117,53)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('follow_page (55 samples, 8.63%)')" onmouseout="c()">
+<title>follow_page (55 samples, 8.63%)</title><rect x="18.5" y="257" width="58.8" height="15.0" fill="rgb(233,72,52)" rx="2" ry="2" />
+<text text-anchor="" x="21.5400313971743" y="267.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >follow..</text>
+</g>
+<g class="func_g" onmouseover="s('__dec_zone_state (2 samples, 0.31%)')" onmouseout="c()">
+<title>__dec_zone_state (2 samples, 0.31%)</title><rect x="653.7" y="193" width="2.1" height="15.0" fill="rgb(212,173,32)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('free_pgtables (1 samples, 0.16%)')" onmouseout="c()">
+<title>free_pgtables (1 samples, 0.16%)</title><rect x="584.3" y="289" width="1.1" height="15.0" fill="rgb(251,198,51)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('pmd_huge (1 samples, 0.16%)')" onmouseout="c()">
+<title>pmd_huge (1 samples, 0.16%)</title><rect x="258.7" y="257" width="1.1" height="15.0" fill="rgb(221,68,31)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('filemap_fault (64 samples, 10.05%)')" onmouseout="c()">
+<title>filemap_fault (64 samples, 10.05%)</title><rect x="107.1" y="209" width="68.4" height="15.0" fill="rgb(251,159,52)" rx="2" ry="2" />
+<text text-anchor="" x="110.142857142857" y="219.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >filemap..</text>
+</g>
+<g class="func_g" onmouseover="s('free_hot_cold_page (1 samples, 0.16%)')" onmouseout="c()">
+<title>free_hot_cold_page (1 samples, 0.16%)</title><rect x="607.8" y="209" width="1.1" height="15.0" fill="rgb(215,101,10)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('[unknown] (15 samples, 2.35%)')" onmouseout="c()">
+<title>[unknown] (15 samples, 2.35%)</title><rect x="269.4" y="401" width="16.0" height="15.0" fill="rgb(206,58,10)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('mmput.part.20 (1 samples, 0.16%)')" onmouseout="c()">
+<title>mmput.part.20 (1 samples, 0.16%)</title><rect x="268.3" y="257" width="1.1" height="15.0" fill="rgb(236,170,14)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__dec_zone_page_state (3 samples, 0.47%)')" onmouseout="c()">
+<title>__dec_zone_page_state (3 samples, 0.47%)</title><rect x="652.6" y="209" width="3.2" height="15.0" fill="rgb(222,96,43)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('main (279 samples, 43.80%)')" onmouseout="c()">
+<title>main (279 samples, 43.80%)</title><rect x="286.5" y="417" width="297.8" height="15.0" fill="rgb(218,20,25)" rx="2" ry="2" />
+<text text-anchor="" x="289.483516483516" y="427.5" font-size="12" font-family="Verdana" fill="rgb(0,0,0)"  >main</text>
+</g>
+<g class="func_g" onmouseover="s('do_execve (1 samples, 0.16%)')" onmouseout="c()">
+<title>do_execve (1 samples, 0.16%)</title><rect x="268.3" y="369" width="1.1" height="15.0" fill="rgb(231,145,4)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__schedule (6 samples, 0.94%)')" onmouseout="c()">
+<title>__schedule (6 samples, 0.94%)</title><rect x="279.0" y="225" width="6.4" height="15.0" fill="rgb(231,127,37)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('handle_pte_fault (1 samples, 0.16%)')" onmouseout="c()">
+<title>handle_pte_fault (1 samples, 0.16%)</title><rect x="10.0" y="321" width="1.1" height="15.0" fill="rgb(219,165,18)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('iwl_rx_handle (1 samples, 0.16%)')" onmouseout="c()">
+<title>iwl_rx_handle (1 samples, 0.16%)</title><rect x="76.2" y="113" width="1.1" height="15.0" fill="rgb(230,168,23)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__perf_event_task_sched_in (6 samples, 0.94%)')" onmouseout="c()">
+<title>__perf_event_task_sched_in (6 samples, 0.94%)</title><rect x="271.5" y="129" width="6.4" height="15.0" fill="rgb(214,165,21)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('page_waitqueue (4 samples, 0.63%)')" onmouseout="c()">
+<title>page_waitqueue (4 samples, 0.63%)</title><rect x="245.9" y="193" width="4.3" height="15.0" fill="rgb(243,170,49)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('[unknown] (15 samples, 2.35%)')" onmouseout="c()">
+<title>[unknown] (15 samples, 2.35%)</title><rect x="269.4" y="369" width="16.0" height="15.0" fill="rgb(234,100,37)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('sys_execve (1 samples, 0.16%)')" onmouseout="c()">
+<title>sys_execve (1 samples, 0.16%)</title><rect x="268.3" y="385" width="1.1" height="15.0" fill="rgb(221,80,8)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('pud_huge (2 samples, 0.31%)')" onmouseout="c()">
+<title>pud_huge (2 samples, 0.31%)</title><rect x="261.9" y="257" width="2.2" height="15.0" fill="rgb(240,7,29)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('[unknown] (15 samples, 2.35%)')" onmouseout="c()">
+<title>[unknown] (15 samples, 2.35%)</title><rect x="269.4" y="385" width="16.0" height="15.0" fill="rgb(212,189,11)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('kernel_read (1 samples, 0.16%)')" onmouseout="c()">
+<title>kernel_read (1 samples, 0.16%)</title><rect x="270.5" y="241" width="1.0" height="15.0" fill="rgb(239,60,10)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('__ticket_spin_lock (7 samples, 1.10%)')" onmouseout="c()">
+<title>__ticket_spin_lock (7 samples, 1.10%)</title><rect x="98.6" y="193" width="7.5" height="15.0" fill="rgb(225,165,27)" rx="2" ry="2" />
+</g>
+<g class="func_g" onmouseover="s('_cond_resched (3 samples, 0.47%)')" onmouseout="c()">
+<title>_cond_resched (3 samples, 0.47%)</title><rect x="123.2" y="193" width="3.2" height="15.0" fill="rgb(240,26,37)" rx="2" ry="2" />
+</g>
+</svg>
