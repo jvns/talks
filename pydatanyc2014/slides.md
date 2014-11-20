@@ -1,4 +1,4 @@
-# Recalling with precision
+# Machine learning: the boring parts
 
 by Julia Evans <br>
 [`twitter.com/b0rk`][twitter]  <br>
@@ -10,8 +10,6 @@ by Julia Evans <br>
 [website]: http://jvns.ca
 
 <img src="stripe.png" style="width: 200px" class="image">
-
-# Machine learning: the boring parts
 
 # How to not cry when someone asks you about a model you built 2 months ago
 
@@ -25,7 +23,13 @@ by Julia Evans <br>
 
 ML models are like dating: when the exciting new relationship butterflies are gone and now you've moved in together and you're arguing over whether you need to buy a new shoe rack for the front hall.
 
-# Where we're going
+# This talk is not
+
+* Building new models is so fun
+* CHANGING THE WORLD WITH COMPUTERS
+* new and exciting algorithms
+
+# This talk
 
 * **Later stages of an ML project:**
 * what matters
