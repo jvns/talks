@@ -37,12 +37,25 @@ billing_address_country: Venezuela
 ip_address_country: Australia
 ```
 
-Example score: 80% likely to be fraudulent.
-
 # It matters
 
 * credit card fraud costs merchants money
-* blocking the wrong payments costs merchants money
+
+# It's too much for humans to review
+
+# ★★★ <br>MACHINE LEARNING <br>★★★
+
+
+# 
+```
+card_number: <some valid-looking number>
+name: John Doe
+card_country: US
+billing_address_country: Venezuela
+ip_address_country: Australia
+```
+
+Example score: 80% likely to be fraudulent.
 
 # The first question from the sales team is...
 
@@ -50,6 +63,11 @@ Example score: 80% likely to be fraudulent.
 
 * What's the false positive rate? 
 * How much of the fraud do we actually catch?
+
+# It matters
+
+* credit card fraud costs merchants money
+* blocking the wrong payments costs merchants money
 
 # Does it work better than it did 6 weeks ago?
 
@@ -141,7 +159,7 @@ True       0.9
 ```
 
 
-2. Metadata
+# 2. Metadata
 
 * what git revision did it come from?
 * How did I split the data into a training set and a test set? (randomly? by date?)
@@ -150,14 +168,22 @@ True       0.9
 * If I trained a decision tree, did I set a maximum depth?
 * Which features were important?
 
-2. Metadata: notes.txt
+# 2. Metadata: notes.txt
 
 * exactly where did the training data come from?
 * how did we filter them?
 * the features importances for each feature
 
-3. Metrics
+# 3. Put everything in s3
 
-# Future work
+```
+$ aws s3 ls s3://stripe-data-training
+card_only_model_2014-07-07-23:26/scores.tsv
+card_only_model_2014-07-07-23:26/notes.txt
+card_only_model_2014-07-11-00:58/scores.tsv
+card_only_model_2014-07-11-00:58/notes.txt
+````
 
-* better error bars!
+# 4. Metrics
+
+# thanks!
