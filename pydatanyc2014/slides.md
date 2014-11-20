@@ -139,8 +139,6 @@ want? it's boring. Having standard graphing tools is *amazing*.
 
 # What it looks like
 
-* https://topmodel.stripe.com
-* https://topmodel.stripe.com/compare/search/transaction_fraud/tokenization_stripejs/
 
 # How it works
 
@@ -158,6 +156,7 @@ False      0.1
 True       0.9
 ```
 
+# 1. This lets us change our mind later
 
 # 2. Metadata
 
@@ -186,4 +185,16 @@ card_only_model_2014-07-11-00:58/notes.txt
 
 # 4. Metrics
 
-# thanks!
+# Things I learned
+
+# don't throw away your data
+
+show the new stuff!
+
+# done > perfect
+
+# simple solution > no solution
+
+# having evaluations stored is *awesome*
+
+# Thanks!
