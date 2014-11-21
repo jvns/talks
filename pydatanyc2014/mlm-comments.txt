@@ -1,0 +1,59 @@
+1:37 PM] julia: hey can you read this and tell me what you think of the narrative flow?
+
+[1:37 PM] julia: https://gist.github.com/jvns/edba2125aebc13cd826f
+
+[1:37 PM] julia: (a talk)
+
+[1:37 PM] mlm: (looking)
+
+[1:37 PM] julia: it's not at all finished
+
+[1:42 PM] mlm: outline looks good!
+
+[1:42 PM] mlm: i think the questions that come to mind naturally
+
+[1:42 PM] mlm: aren't about the talk per se so much as about top model
+
+[1:42 PM] mlm: there's nothing here about production monitoring, e.g.
+
+[1:42 PM] mlm: and also, "do the model comparisons make sure the validation sets are the same?"
+
+[1:42 PM] mlm: but the narrative is super clear
+
+[1:45 PM] julia: mm production monitoring is super important yeah
+
+[1:45 PM] julia: i will say something about that
+
+[1:46 PM] julia: also i'll talk about how the answer to
+> "do the model comparisons make sure the validation sets are the same?"
+is "no", i guess :)
+
+[1:46 PM] julia: this is really useful, thanks!
+
+[1:46 PM] mlm: np!
+
+----- Yesterday November 20th, 2014 -----
+
+[3:58 PM] julia: thanks for the comments!
+
+[3:58 PM] mlm: np!
+
+[3:58 PM] julia: did you write them down? (can you tell them to me again?)
+
+[3:59 PM] mlm: yup, they were
+
+[3:59 PM] mlm: -"one of the biggest things we care about is fraud" vs. "only"
+
+[3:59 PM] mlm: -maybe a little more color on how fraud costs merchants money
+
+[4:00 PM] mlm: -how do you separate model performance changes over time from changes in underlying trends (might be hard to discuss that in the talk but having answer ready in case it's asked would be good)
+
+[4:00 PM] mlm: -elaborating on the "139" number
+
+[4:01 PM] mlm: and then just on some slides the header is huge relative to the sample data/text
+
+[4:01 PM] julia: oh yeah
+
+[4:01 PM] julia: i have a 6-hour plane ride to fix my slides
+
+[4:02 PM] mlm: yeah haha

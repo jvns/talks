@@ -2,17 +2,23 @@
 
 by Julia Evans <br>
 
+[`twitter.com/b0rk`][twitter]  <br>
+[`github.com/jvns`][github]  <br>
+[`jvns.ca`][website]  <br>
+
+[github]: https://github.com/jvns
+[twitter]:  https://twitter.com/b0rk
+[website]: http://jvns.ca
+
+<img src="stripe.png" width="400px">
+
 # How to not cry when someone asks you about a model you built 2 months ago
 
 # Proving that they're paying you to build models for a reason
 
 # No more handcrafted artisanal data visualizations
 
-(@DanielleSucher)
-
-# 
-
-ML models are like dating: when the exciting new relationship butterflies are gone and now you've moved in together and you're arguing over whether you need to buy a new shoe rack for the front hall.
+(h/t @DanielleSucher)
 
 # This talk is not
 
@@ -27,7 +33,9 @@ ML models are like dating: when the exciting new relationship butterflies are go
 * what we measure
 * how to not have regrets later
 
-# Machine learning at Stripe: fraud
+# ML at Stripe: <br><br> mostly fraud detection
+
+#
 
 ```
 card_number: <some valid-looking number>
@@ -37,9 +45,7 @@ billing_address_country: Venezuela
 ip_address_country: Australia
 ```
 
-# It matters
-
-* credit card fraud costs merchants money
+# fraud costs merchants money
 
 # It's too much for humans to review
 
@@ -55,9 +61,7 @@ billing_address_country: Venezuela
 ip_address_country: Australia
 ```
 
-Example score: 80% likely to be fraudulent.
-
-# The first question from the sales team is...
+80% likely to be fraudulent.
 
 # Does it work?
 
@@ -69,7 +73,9 @@ Example score: 80% likely to be fraudulent.
 * credit card fraud costs merchants money
 * blocking the wrong payments costs merchants money
 
-# Does it work better than it did 6 weeks ago?
+# 
+
+## Does it work better than it did 6 weeks ago?
 
 Did your new awesome idea for a feature actually help?
 
@@ -88,7 +94,7 @@ Did your new awesome idea for a feature actually help?
 
 # Bad practices: not evaluating your model at all
 
-# Value added models
+# A cautionary tale
 
 A model being used to decide whether or not to *fire teachers*,
 discussed by Cathy O'Neil
@@ -113,10 +119,14 @@ want? it's boring. Having standard graphing tools is *amazing*.
 
 # Bad practices: no standardization
 
-* Can't compare precision/recall curve from March and ROC curve from April
+* Can't compare graphs that measure different things
 * Forced us to sit down and decide what metrics are actually important
 
 # Bad practices: throwing your evaluations away
+
+```
+rm roc_curve_2014-01-07_with_billing_address_features.png
+```
 
 # Tenets
 
@@ -125,24 +135,31 @@ want? it's boring. Having standard graphing tools is *amazing*.
 1. Don't throw away your data
 1. Comparing models should be easy
 
-# 
+#
 
-**&lt;/motivational speech&gt;** <br>
-**&lt; reality &gt;**
+## **&lt;/motivational speech&gt;** <br> **&lt; reality &gt;**
 
 # Reality
 
 **139 models** for detecting fraudulent payments
 
+* Some experiments, some we're running in production
 * Standard set of metrics for **all of them**
 * Can look up how well a given model performed in one click.
 
 # What it looks like
 
+#
+
+<img src="homepage2.png">
+
+# 
+
+<img src="model-page.png">
 
 # How it works
 
-# 1. A standard format for results
+# 1. Standard format for results
 
 **Only binary classifiers**
 
@@ -156,7 +173,7 @@ False      0.1
 True       0.9
 ```
 
-# 1. This lets us change our mind later
+# 1. Lets us change our mind later
 
 # 2. Metadata
 
@@ -176,7 +193,7 @@ True       0.9
 # 3. Put everything in s3
 
 ```
-$ aws s3 ls s3://stripe-data-training
+$ aws s3 ls s3://stripe-topmodel
 card_only_model_2014-07-07-23:26/scores.tsv
 card_only_model_2014-07-07-23:26/notes.txt
 card_only_model_2014-07-11-00:58/scores.tsv
