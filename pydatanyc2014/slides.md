@@ -10,7 +10,7 @@ by Julia Evans <br>
 [twitter]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
 
-<img src="stripe.png" width="400px">
+<img src="stripe.png" width="200px">
 
 # How to not cry when someone asks you about a model you built 2 months ago
 
@@ -33,7 +33,7 @@ by Julia Evans <br>
 * what we measure
 * how to not have regrets later
 
-# ML at Stripe: <br><br> mostly fraud detection
+# ML at Stripe: <br> mostly fraud detection
 
 #
 
@@ -72,6 +72,8 @@ ip_address_country: Australia
 
 * credit card fraud costs merchants money
 * blocking the wrong payments costs merchants money
+
+# who builds this
 
 # 
 
@@ -157,6 +159,14 @@ rm roc_curve_2014-01-07_with_billing_address_features.png
 
 <img src="model-page.png">
 
+#
+
+<img src="add-billing-features.png">
+
+#
+
+<img src="compare-precision-recall-big.png">
+
 # How it works
 
 # 1. Standard format for results
@@ -214,4 +224,17 @@ show the new stuff!
 
 # having evaluations stored is *awesome*
 
-# Thanks!
+
+# The dream
+
+<img src="compare-precision-recall-big.png">
+
+# Thanks! Questions?
+
+<b>Julia Evans</b> <br><br>
+
+[`twitter.com/b0rk`][twitter]  <br>
+[`jvns.ca`][website]  <br>
+`julia@stripe.com`  <br>
+
+<img src="stripe.png" width="200px">
