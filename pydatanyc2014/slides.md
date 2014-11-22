@@ -8,7 +8,7 @@ by Julia Evans <br>
 
 <img src="stripe.png" width="200px">
 
-# Machine learning: the boring parts
+# Machine learning: <br> the boring parts
 
 by Julia Evans <br>
 
@@ -137,7 +137,7 @@ A model being used to decide whether or not to *fire teachers*,
 discussed by Cathy O'Neil
 
 <img
-src="http://mathbabe.files.wordpress.com/2012/03/gradegrade.png?w=595">
+src="dont-let-this-be-you.png">
 
 **You don't want this to be you**
 
@@ -206,6 +206,10 @@ rm roc_curve_2014-01-07_with_billing_address_features.png
 <img src="compare-precision-recall-big.png">
 
 # How it works
+
+# Super simple
+
+# Language independent
 
 # 1. Standard format for results
 
@@ -277,7 +281,7 @@ card_only_model_2014-07-11-00:58/notes.txt
 
 # done > perfect
 
-# simple solution > no solution
+# simple solution > <br> no solution
 
 # Storing evaluations forever is *awesome*
 
@@ -302,7 +306,11 @@ card_only_model_2014-07-11-00:58/notes.txt
 
 # start using it today
 
+pandas + numpy + flask + matplotlib
+
 <a href="http://github.com/stripe/topmodel">http://github.com/stripe/topmodel</a>
+
+
 
 # Thanks! Questions?
 
