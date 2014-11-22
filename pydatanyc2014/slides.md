@@ -260,6 +260,11 @@ card_only_model_2014-07-11-00:58/notes.txt
 
 <img src="score_distribution.png">
 
+# Other ways to keep track
+
+* manually review transactions
+* log all choices made in production
+
 # Things I learned
 
 # don't throw away your data
