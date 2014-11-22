@@ -29,13 +29,13 @@ by Julia Evans <br>
 
 # No more handcrafted artisanal data visualizations
 
+(h/t @DanielleSucher)
+
 # Context
 
 * Industry
 * Models are part of a production system
 * Models need to be maintained longterm
-
-(h/t @DanielleSucher)
 
 # This talk is not
 
