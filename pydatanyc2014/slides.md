@@ -33,6 +33,7 @@ by Julia Evans <br>
 
 # This talk is not
 
+* How to train a model
 * Building new models is so fun
 * CHANGING THE WORLD WITH COMPUTERS
 * New and exciting algorithms
@@ -80,7 +81,7 @@ billing_address_country: Venezuela
 ip_address_country: Australia
 ```
 
-80% likely to be fraudulent.
+made up score: 80% likely to be fraudulent.
 
 # Does it work?
 
@@ -91,6 +92,17 @@ ip_address_country: Australia
 
 * credit card fraud costs merchants money
 * blocking the wrong payments costs merchants money
+
+# There are tradeoffs
+
+```
+target     score
+False      0.2
+True       0.8
+False      0.7
+False      0.1
+True       0.9
+```
 
 # There are tradeoffs
 
@@ -252,13 +264,11 @@ card_only_model_2014-07-11-00:58/notes.txt
 
 # don't throw away your data
 
-show the new stuff!
-
 # done > perfect
 
 # simple solution > no solution
 
-# having evaluations stored is *awesome*
+# Storing evaluations forever is *awesome*
 
 
 # The dream
@@ -279,10 +289,9 @@ show the new stuff!
 <img src="avi.png" width=210px height=260px>
 <img src="julia.png" width=210px height=260px>
 
-# It's open source!
+# start using it today
 
 <a href="http://github.com/stripe/topmodel">http://github.com/stripe/topmodel</a>
-
 
 # Thanks! Questions?
 
