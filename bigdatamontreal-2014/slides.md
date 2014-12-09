@@ -116,10 +116,10 @@ NULL, NULL) = 512
 * 20 GB of disk space
 * one 14 GB file `/wikipedia.csv`
 
-```
+<pre class="medium">
 $ snakebite ls -h /
 14.1G        /wikipedia.csv
-```
+</pre>
 
 # How HDFS works
 
@@ -154,11 +154,11 @@ $ snakebite ls -h /
 
 # Let's strace it!
 
-```
+<pre class="medium">
 snakebite cat /wikipedia.csv | head
 strace -e recvfrom,sendto,connect -s 1000\
      snakebite cat /wikipedia.csv | head
-```
+</pre>
 
 # 1: Where are the blocks?
 
@@ -209,3 +209,84 @@ n7\n'BP-572418726-10.240.98.73-1417975119036\20\313\201\200\200\4\30\263\t \200\
 </pre>
 
 
+# 2: Getting a block
+
+(<b>10.240.146.168</b> is hadoop-w-1)
+<pre>
+connect(5, {sa_family=AF_INET, sin_port=htons(<b>50010</b>),
+        sin_addr=inet_addr("<b>10.240.146.168</b>")}, 16) = 0
+sendto(5, "\nK\n>\n2\n'BP-572418726-10.240.98.73-1417975119036\20\311\201\200\200\4\30\261\t\22\10\n\0\22\0\32\0\"\0\22\tsnakebite\20\0\30\200\2
+00\200@", 84, 0, NULL, 0) = 84
+</pre>
+
+# 2: Getting a block
+
+
+<pre>
+OpTransferBlockProto
+header {
+  baseHeader {
+    block {
+      poolId: "BP-572418726-10.240.98.73-1417975119036"
+      blockId: <b>1073742025</b>
+      generationStamp: 1201
+    }
+  }
+  clientName: "snakebite"
+}
+</pre>
+
+# 2: Getting a block
+
+* Blocks for `/wikipedia.csv`
+
+<pre>
+     Bytes |   Block ID | # Locations |       Hostnames
+ <b>134217728</b> | <b>1073742025</b> |           1 |      hadoop-w-1
+ 134217728 | 1073742026 |           1 |      hadoop-w-1
+ 134217728 | 1073742027 |           1 |      hadoop-w-0
+ 134217728 | 1073742028 |           1 |      hadoop-w-1
+ 134217728 | 1073742029 |           1 |      hadoop-w-0
+ 134217728 | 1073742030 |           1 |      hadoop-w-1
+ ....
+ 134217728 | 1073742136 |           1 |      hadoop-w-0
+  66783720 | 1073742137 |           1 |      hadoop-w-1
+</pre>
+
+
+# 2: Getting a block
+
+<pre>
+recvfrom(5, "<b>title,id,language</b>,wp_namespace,is_redirect,revision_id,contributor_ip,contributor_id,contributor_username,timestamp,is_minor,is_bot
+,reversion_id,comment,num_characters\nIvan Tyrrell,6126919,,0,true,264190184,,37486,Oddharmonic,1231992299,,,,\"Added defaultsort tag, categorie
+s.\",2989\nInazuma Raigor\305\215,9124432,,0,,224477516,,2995750,ACSE,1215564370,,,,/* Top division record */ rm jawp reference,5557\nJeb Bush,1
+89322,,0,,299771363,66.119.31.10,,,1246484846,,,,/* See also */,43680\nTalk:Goranboy (city),18941870,,1,,", 512, 0, NULL, NULL) = 512
+</pre>
+
+
+# 3: Where is the block?
+
+It's on hadoop-w-1!
+
+<pre class="big">
+$ ssh hadoop-w-1
+</pre class="big">
+
+# 3: Where is the block?
+
+<pre>
+$ cd /hadoop/dfs/data/current/BP-572418726-10.240.98.73-1417975119036/current/finalized
+$ ls -l blk_<b>1073742025</b>
+-rw-r--r-- 1 hadoop hadoop <b>134217728</b> Dec  8 02:08 blk_1073742025
+</pre>
+
+# 3: Where is the block?
+
+<pre>
+$ head blk_<b>1073742025</b>
+<b>title,id,language</b>,wp_namespace,is_redirect,revision_id,contributor_ip,contributor_id,contributor_username,timestamp,is_minor,is_bot,reversion_id,comment,num_characters
+Ivan Tyrrell,6126919,,0,true,264190184,,37486,Oddharmonic,1231992299,,,,"Added defaultsort tag, categories.",2989
+Inazuma Raigorō,9124432,,0,,224477516,,2995750,ACSE,1215564370,,,,/* Top division record */ rm jawp reference,5557
+Jeb Bush,189322,,0,,299771363,66.119.31.10,,,1246484846,,,,/* See also */,43680
+Talk:Goranboy (city),18941870,,1,,233033452,,627032,OOODDD,1219200113,,,,talk page tag  using [[Project:AutoWikiBrowser|AWB]],52
+</pre>

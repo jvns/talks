@@ -19,13 +19,17 @@
             box-shadow: none;
         }
 
-        /*
-        .reveal pre {
+        .reveal pre.medium {
             font-family: andale mono;
             font-size: 1em;
             line-height: 1em;
         }
-        */
+
+        .reveal pre.big {
+            font-family: andale mono;
+            font-size: 1.7em;
+            line-height: 1.2em;
+        }
 
         /*.reveal pre code {
         //    font-family: andale mono;
