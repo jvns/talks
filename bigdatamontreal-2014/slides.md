@@ -10,13 +10,29 @@ by Julia Evans <br>
 [website]: http://jvns.ca
 
 
+# strace?!
+
+HOW TO SPY
+
+# Hadoop?!
+
+A distributed filesystem + tools for querying + transforming data.
+
 # all you need to know about Hadoop
+
+HDFS is a distributed filesystem
+
+# Let's use hadoop!
 
 ```
 $ hadoop fs -ls /user/julia 
 file1
 file2
 ````
+
+# Let's use hadoop!
+
+DEMO DEMO DEMO
 
 # Learning about HDFS
 
@@ -41,6 +57,10 @@ file2
 ```
 $ strace hadoop fs -ls /penguin
 ```
+
+# How to strace
+
+DEMO DEMO
 
 </section>
 <section data-background="strace-garbage.png">
@@ -88,17 +108,11 @@ NULL, NULL) = 512
 
 <img src="warning.png">
 
-# Next time
+# Time for strace!
 
-* How HDFS works
-* architecture: DataNodes! NameNodes!
-* MapReduce
-* how you could build your own database on top of HDFS if it were a good idea
-* BEING A WIZARD
+# How HDFS works
 
-[`twitter.com/b0rk`][twitter]  <br>
-[`jvns.ca`][website]  <br>
+* Files are split into **blocks**
 
-[twitter]:  https://twitter.com/b0rk
-[website]: http://jvns.ca
-
+```
+```

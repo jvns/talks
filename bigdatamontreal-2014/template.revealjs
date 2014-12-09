@@ -2,20 +2,27 @@
 <html lang="en">    
 <head>
     <meta charset="utf-8">
-    <title>Spying on your programs with strace</title>
+    <title>Machine learning: the boring parts</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
-    <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
+    <link rel="stylesheet" href="reveal_js/css/theme/moon.css" id="theme">
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
         document.write( '<link rel="stylesheet" href="reveal_js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
     <style>
-        img.image {
+        .reveal a:not(.image) {
+            color: white;
+        }
+        .reveal section img {
             border: none;
+            background: none;
+            box-shadow: none;
         }
 
-        .reveal code {
+        .reveal pre code {
             font-family: andale mono;
+            font-size: 1.7em;
+            line-height: 1.2em;
         }
     </style>
 </head>
@@ -35,6 +42,7 @@ $body$
             progress: true,
             rollingLinks: false,
             transition: "none",
+            history: true,
             maxScale: 10.0,
         });
     </script>
