@@ -19,10 +19,55 @@
             box-shadow: none;
         }
 
+        /*
+        .reveal pre {
+            font-family: andale mono;
+            font-size: 1em;
+            line-height: 1em;
+        }
+        */
+
+        /*.reveal pre code {
+        //    font-family: andale mono;
+        //    font-size: 1.7em;
+        //    line-height: 1.2em;
+        //}*/
+
+        .reveal pre b {
+            color: yellow;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="reveal">
+        <div class="slides">
+$body$
+        </div>
+    </div>
+    <script src="reveal_js/lib/js/head.min.js"></script>
+    <script src="reveal_js/js/reveal.min.js"></script>
+    <script>
+        // Required, even if empty.
+        Reveal.initialize({
+            controls: false,
+            progress: true,
+            rollingLinks: false,
+            transition: "none",
+            history: true,
+            maxScale: 10.0,
+        });
+    </script>
+</body>
+</html>
         .reveal pre code {
             font-family: andale mono;
             font-size: 1.7em;
             line-height: 1.2em;
+        }
+
+        .reveal pre b {
+            color: yellow;
         }
     </style>
 </head>
