@@ -156,7 +156,7 @@ $ snakebite ls -h /
 
 <pre class="medium">
 snakebite cat /wikipedia.csv | head
-strace -e recvfrom,sendto,connect -s 1000\
+strace -e recvfrom,sendto,connect \
      snakebite cat /wikipedia.csv | head
 </pre>
 
@@ -290,3 +290,39 @@ Inazuma Raigorō,9124432,,0,,224477516,,2995750,ACSE,1215564370,,,,/* Top divisi
 Jeb Bush,189322,,0,,299771363,66.119.31.10,,,1246484846,,,,/* See also */,43680
 Talk:Goranboy (city),18941870,,1,,233033452,,627032,OOODDD,1219200113,,,,talk page tag  using [[Project:AutoWikiBrowser|AWB]],52
 </pre>
+
+# strace the datanode!
+
+# The moral
+
+strace is a fun way to learn about systems!
+
+# don't strace in production
+
+<img src="warning.png" width=300px>
+
+# Learning about internals = great
+
+# Internals
+
+* let you manage smarter systems
+* Now you know why you shouldn't set your block size to 4KB!
+
+# Further directions:
+
+* strace the scheduler!
+* see how map/reduce jobs get submitted!
+* strace a map job while it's running!
+
+# Questions?
+
+Julia Evans <br>
+[`twitter.com/b0rk`][twitter]  <br>
+[`github.com/jvns`][github]  <br>
+[`jvns.ca`][website]  <br>
+
+[github]: https://github.com/jvns
+[twitter]:  https://twitter.com/b0rk
+[website]: http://jvns.ca
+
+
