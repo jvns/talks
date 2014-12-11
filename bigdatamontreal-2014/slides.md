@@ -66,22 +66,23 @@ DEMO DEMO
 
 # open
 
-```
+<pre>
 strace -e open hadoop fs -ls /panda
 open("<b>/etc/hadoop/mapred-site.xml</b>", O_RDONLY) = 274
 open("/etc/hadoop/yarn-site.xml", O_RDONLY) = 274
 open("/etc/hadoop/hdfs-site.xml", O_RDONLY) = 274
-```
+</pre>
 
 # sendto
 
-```
+<pre>
 $ strace snakebite ls /unicorn
 connect(8, {sa_family=AF_INET, sin_port=htons(<b>8200</b>),
     sin_addr=inet_addr("<b>10.147.177.170</b>")}, 16) = 0
 sendto(8,
     "\nB\n5\n3\n(BP-1019336183-10.165.43.39-1400088409498\20\211\200\200\200\4\30\361\7\22\tsnakebite\20\0\30\200\200\200@",
     75, 0, NULL, 0) = 75
+</pre>
 ```
 
 # recvfrom
@@ -126,7 +127,7 @@ $ snakebite ls -h /
 * The **namenode** knows where all the files are
     * hadoop-m-0
 * The **datanodes** store the files
-    * adoop-w-0, hadoop-w-1
+    * hadoop-w-0, hadoop-w-1
 
 # How HDFS works
 
@@ -290,6 +291,8 @@ Inazuma Raigorō,9124432,,0,,224477516,,2995750,ACSE,1215564370,,,,/* Top divisi
 Jeb Bush,189322,,0,,299771363,66.119.31.10,,,1246484846,,,,/* See also */,43680
 Talk:Goranboy (city),18941870,,1,,233033452,,627032,OOODDD,1219200113,,,,talk page tag  using [[Project:AutoWikiBrowser|AWB]],52
 </pre>
+
+# strace the namenode!
 
 # strace the datanode!
 
