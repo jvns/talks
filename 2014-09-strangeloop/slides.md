@@ -292,7 +292,6 @@ Not as scary as it sounds. I promise!
 
 + Google Summer of Code
 + GNOME Outreach Program for Women
-+ **Apply now!** Deadline: Oct. 31, 2014
 
 # You can be a kernel hacker
 
