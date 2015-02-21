@@ -188,12 +188,6 @@ NULL, NULL) = 512
 
 <img src="flamegraph.svg">
 
-# ftrace: <br> tracing kernel functions
-
-# ftrace
-
-* tracking TCP retransmits
-
 # /proc
 
 # /proc
