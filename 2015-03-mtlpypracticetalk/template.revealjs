@@ -2,9 +2,9 @@
 <html lang="en">    
 <head>
     <meta charset="utf-8">
-    <title>Machine learning: the boring parts</title>
+    <title>debugging python without python</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
-    <link rel="stylesheet" href="reveal_js/css/theme/moon.css" id="theme">
+    <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
         document.write( '<link rel="stylesheet" href="reveal_js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -27,15 +27,16 @@
 
         .reveal pre.big {
             font-family: andale mono;
-            font-size: 1.7em;
+            font-size: 1.4em;
             line-height: 1.2em;
+            width: 1000px;
         }
 
-        /*.reveal pre code {
-        //    font-family: andale mono;
-        //    font-size: 1.7em;
-        //    line-height: 1.2em;
-        //}*/
+        .reveal pre code {
+           font-family: andale mono;
+            font-size: 1.3em;
+            line-height: 1.2em;
+        }
 
         .reveal pre b {
             color: yellow;

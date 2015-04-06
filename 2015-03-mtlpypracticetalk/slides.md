@@ -1,9 +1,9 @@
-# Spying on your programs with strace
+# spying on your programs
 
 by Julia Evans <br>
-[`twitter.com/b0rk`][twitter]  <br>
-[`github.com/jvns`][github]  <br>
-[`jvns.ca`][website]  <br>
+
+* twitter: @b0rk <br>
+* blog: jvns.ca
 
 [github]: https://github.com/jvns
 [twitter]:  https://twitter.com/b0rk
@@ -11,7 +11,9 @@ by Julia Evans <br>
 
 # 
 
-<img src="python-logo.png">
+<img src="python-logo-light.png">
+
+# your program <br> = <br> black box
 
 # Debugging:
 
@@ -87,9 +89,9 @@ access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 
 # open
 
-```
+<pre class="big">
 strace -etrace=open google-chrome
-```
+</pre>
 <img src="consent-to-send-stats.png">
 
 # open
@@ -148,14 +150,66 @@ NULL, NULL) = 512
 
 + spy on log files!
 
+# Chapter 2: <br> The Case of the <br> Slow Program
+
+# 3 Slow programs
+
+1. CPU time
+1. too many writes
+1. waiting for a slow server
+
+# Mystery program #1
+
+
+# 
+
+<pre class="big">
+$ time python mystery_1.py
+0.09user 0.01system 0:02.11elapsed 5%CPU 
+</pre>
+
+# wchan: wait channel
+
+# demo demo
+
+# sk_wait_data
+
+Wait for some data on a network socket.
+
+# We win! It was the network
+
+# Mystery program #2
+
+```
+$ time python mystery_2.py
+2.74user 0.00system 0:02.74elapsed 99%CPU 
+```
+
+# Use a python profiler
+
+# Mystery program #3
+
+# (really a mystery)
+
+# 
+
+```
+time python mystery_3.py 
+0.08user 1.03system 0:10.61elapsed 10%CPU
+```
+
+# demo demo
+
+# we win
+
+# your program <br> = <br> black box
+
+# learn your operating system
+
 # Thanks!
 
-* strace all the things!
-* on OS X / Windows, try **sysdig**
-* Notes: [http://bit.ly/strace-notes](http://bit.ly/strace-notes)
-
-[`twitter.com/b0rk`][twitter]  <br>
-[`jvns.ca`][website]  <br>
+* twitter: @b0rk <br>
+* blog: jvns.ca
 
 [twitter]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
