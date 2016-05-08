@@ -1,305 +1,198 @@
-# spying on your programs
+# how to trick a neural network
 
 by Julia Evans <br>
-Stripe<br>
+
 
 * twitter: @b0rk <br>
 * blog: jvns.ca
+
+<br>
+notes at http://bit.ly/trick-neural-network
 
 [github]: https://github.com/jvns
 [twitter]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
 
 <br><br>
-Tweet questions to @b0rk
+
+<!-- who's excited about MACHINE LEARNING -->
+
+# who am I
+
+<!-- ml engineer; machine learning is my job. not a neural networks expert! -->
+
+# "neural networks seem really cool"
 
 # 
 
-<img src="python-logo-light.png">
+## neural networks <br><br> deep learning <br><br> "magic"
+
 
 # 
 
-<div style="font-size:200%; line-height: 200%;">
-perl | go | c++ | fortran <br>
-php | python | java | smalltalk <br>
-INTERCAL | BASIC
-</div>
-
-
-# Linux-only
-
-# your program <br> = <br> black box
-
-# Debugging:
-
-+ look at the source code
-+ add print statements
-+ know the programming language
-
-# Debugging:
-
-+ <strike>look at the source code</strike>
-+ <strike>add print statements</strike>
-+ <strike>know the programming language</strike>
-+ ★★★ be a wizard★★★
-
-# 
-
-<img src="top.png">
-
-# This talk
-
-* Wizard school (or, an operating systems primer)
-* Chapter 1: The Case of the Mystery Config File
-* Chapter 2: The Case of the French Website
-* Chapter 3: The Case of the Slow Program
-
-# Wizard School <br> -or- <br> why you should ❤ your operating system
-
-# What is an operating system for?
-
-# 
-
-When I go to http://google.com, kernel code runs for:
-
-+ Typing in the address
-+ Handling every network packet
-+ Writing history files to disk
-+ Allocating memory
-+ Communicating with the graphics card
-
-# How to call operating system code
-
-# ★★★ <br> System calls!!! <br> ★★★ 
-
-# System calls: <br> an OS's interface
-
-* open a file! (`open`)
-* start a program! (`execve`)
-* change a file's permissions! (`chmod`)
-
-# What we've learned 
-
-+ Your OS does tons of stuff
-+ Programs tell it what to do using system calls
-
-# Using systems knowledge to debug
-
-# Chapter 1: <br> The Case of the <br> Mystery Config File
-
-# 
-
-<div style="font-size:300%; line-height: 120%;">
-Does bash use `.bash_profile` or `.bashrc`??!??
-</div>
-
-# strace <br> = <br> wizardry
-
-# strace <br> = <br> tracing system calls
-
-# How to strace
-
-```
-$ strace google-chrome
-execve("/usr/bin/google-chrome", ["google-chrome"], [/* 51 vars */]) = 0
-brk(0)                                  = 0x124f000
-access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
-```
+<img src="alphago.png" width=70%>
 
 </section>
-<section data-background="strace-garbage.png">
 
-# open
+<section data-background="beaches.png">
 
-<pre class="big">
-strace -e open bash
-</pre>
-<img src="strace_bash.png">
+</section>
 
-# bashrc wins!
+<section data-background="cars.png">
 
-# other awesome system calls
+</section>
 
-* `write` for log files
-* `execve` for starting programs
-* `recvfrom` for receiving data
+<section data-background="fire_hydrant.png">
+</section>
 
-# strace zine
+<section data-background="cathedral.png">
 
-#
+</section>
 
-<img src="strace_zine.jpg">
+<!-- "this is what we're going to talk about" -->
 
-# Chapter 2: <br> The Case of the <br> French Website
+# very mysterious
+
+<!-- put picture of a black bos here -->
 
 # 
 
-<img src="french-website-chrome.png">
+## is it magic only google can do? <br> Can **I** do it?
+
+<!-- picture of paper -->
+
+# neural networks aren't magic: they're math
+
+# i have a math degree i can do this =D
+
+# this talk
+
+1. what even is a neural network
+1. download a neural network
+1. play with it ("is this a cat?")
+1. trick it
+
+
+# step 1: what even is a neural network
+
+<!-- a function -->
+
+# image classification
 
 # 
 
-<img src="curl-french-website.png">
+<img src="corgi.png" width=50%>
 
-# ???
-
-# network spying TO THE RESCUE
+# a neural network is a (deterministic!!) function
 
 # 
 
-```
-sudo ngrep -d lo 5000
-interface: lo (127.0.0.0/255.0.0.0)
-match: 5000
-####
-T 127.0.0.1:45438 -> 127.0.0.1:5000 [AP]
-  GET / HTTP/1.1..Host: localhost:5000..Connection:
-keep-alive..Cache-Control: max-age=0..Accept:
-text/html,application/xhtml+xml,application
-/xml;q=0.9,image/webp,*/*;q=0.8..User-Agent: Mozilla/5.0 (X11; Linux
-x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.53 Saf
-ari/537.36..DNT: 1..Accept-Encoding: gzip, deflate,
-sdch..Accept-Language: en-US,en;q=0.8..Cookie:
-username-localhost-8888="2|1:0|10:142841
-1879|23:username-localhost-8888|48:MjYzMTc2NGMtYTA1MC00YjNkLTkyYTktNGFhY2U3NmUwMjdj|f5f14c08e970bd6c81f8efe3f3a8b98edd85de834e88c250e96fdb7
-fab7ee279"....
-#######################
-T 127.0.0.1:45440 -> 127.0.0.1:5000 [AP]
-  GET / HTTP/1.1..User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu)
-libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23
-librtmp/2.3..Host: localhost:5000..Accept: */*....                                                                                                                
-##################
-```
+<img src="corgi-input.png" width=30%>
+<img src="labels.png" width=60%>
+
+</section>
+
+<section data-background="cat_data_ndarray.png">
+
+</section>
+
+<section data-background="googlenet-arch.jpg">
+
+</section>
+
+# what we learned
+
+* a neural net is a function
+* made up of many simple functions
+* that you learn from some data
+
+# step 2: download a neural network
+
+</section>
+
+<section data-background="download_neural_network.png">
+
+</section>
+
+# 50 megabytes
+
+
+# step 3: PREDICT SOME THINGS WITH IT
+
+<!-- picture of dog -->
+
+# demo demo demo
+
+# step 4: trick it
+
+</section>
+
+<section data-background="trick.png">
+
+<!-- mention a paper by google at this point -->
+
+</section>
+
+# back to math for a second
 
 # 
 
-<pre class="big">
-Accept-Language: en-US
-</pre>
-
-#
-
-<img src="curl-english-website.png">
-
-
-# network spying tools
-
-- ngrep
-- tcpdump
-- wireshark
-- mitmproxy
-
-
-# Chapter 3: <br> The Case of the <br> Slow Program
-
-# 3 Slow programs
-
-1. CPU time
-1. too many writes
-1. waiting for a slow server
-
-# Mystery program #1
+<img src="hill.jpg" width=100%>
 
 # 
 
-<pre class="big">
-$ time python mystery_1.py
-0.09user 0.01system 0:02.11elapsed 5%CPU 
-</pre>
-
-# What is it waiting for? 
-
-# Let's look into the kernel's soul
-
-# /proc/`pid`/stack
-
-```
-$ pgrep -f mystery_1
-31728
-$ sudo cat /proc/31728/stack
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff8163c039>] sk_wait_data+0xd9/0xe0
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff81698bdf>] tcp_recvmsg+0x67f/0xb50
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff816c172b>] inet_recvmsg+0x6b/0x80
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff81637895>] sock_recvmsg+0xc5/0xe0
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff8163799e>] SYSC_recvfrom+0xee/0x170
-[<ffffffff8163871e>] SyS_recvfrom+0xe/0x10
-[<ffffffff8176d505>] return_to_handler+0x0/0x2b
-[<ffffffff8176d66d>] system_call_fastpath+0x1a/0x1f
-[<ffffffffffffffff>] 0xffffffffffffffff
-```
-
-# We win! It was the network!
-
-# Our server
-
-<pre class="big">
-@app.route('/')
-def slow():
-    time.sleep(2)
-    return "Hi!"
-app.run()
-</pre>
-
-# Mystery program #2
-
-<pre class="big">
-$ time python mystery_2.py
-2.74user 0.00system 0:02.74elapsed 99%CPU 
-</pre>
-
-# Use a python profiler
+<img src="hill-with-panda.jpg" width=100%>
 
 # 
 
-<pre class="big">
-total = 0
-for i in xrange(14000000):
-    total += i
-</pre>
+<img src="hill-with-arrow.jpg" width=100%>
 
-# Mystery program #3
+# which direction do we take the image in?
 
-# (really a mystery)
+# best direction = derivative
 
-# 
+# demo demo demo
 
-<pre class="big">
-$ time python mystery_3.py 
-0:02.61elapsed 62%CPU
-$ time python mystery_3.py 
-0:10.61elapsed 10%CPU
-</pre>
+</section>
 
-# demo demo
+<section data-background="paper_towel_velvet.png">
 
-# we win
-
-# your program <br> = <br> black box
-
-# there are a lot of awesome tools
-
-# learn your operating system
+</section>
 
 # 
 
-<strike>Hacker School</strike> Recurse Center
+<img src="black_paper_towel.png" width="50%">
 
-<img src="hackerschool_logo.png">
+# 
 
-# Thanks!
+<img src="paper_towel_magnified.png" width="50%">
 
-* Julia Evans
+
+# let's do more!!
+
+</section>
+
+<section data-background="panda_vulture_graph.png">
+
+</section>
+
+# 
+
+## don't trust machine learning models <br> <br> try to trick the model!
+
+# what you can do next
+
+* read the paper!
+* play with the neural net yourself!
+* read other machine learning papers
+* try out tensorflow!
+* ask me questions!
+
+# thanks! questions?
+
+notes at http://bit.ly/trick-neural-network
+
 * twitter: @b0rk <br>
-* learn more by reading my blog: http://jvns.ca
+* blog: jvns.ca
 
-<br><br>
-Come get a strace zine!!!!!
 
-[twitter]:  https://twitter.com/b0rk
-[website]: http://jvns.ca

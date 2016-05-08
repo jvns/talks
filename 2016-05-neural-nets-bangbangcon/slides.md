@@ -32,15 +32,17 @@ notes at http://bit.ly/trick-neural-network
 <section data-background="fire_hydrant.png">
 </section>
 
-<section data-background="cathedral.png">
-
+<section data-background="baby.png">
 </section>
+
 
 <!-- "this is what we're going to talk about" -->
 
 # step 1: read a cool paper
 
+
 <img src="paper.png">
+
 
 # neural networks aren't magic: they're math
 
@@ -53,6 +55,8 @@ notes at http://bit.ly/trick-neural-network
 # what the paper said
 
 <img src="trick.png">
+
+# can I implement the paper??? (yes)
 
 # a neural network is a function
 
@@ -174,6 +178,8 @@ notes at http://bit.ly/trick-neural-network
 * michael nielsen's neural networks book
 * try out tensorflow!
 * ask me questions!
+
+# papers we love
 
 
 #
