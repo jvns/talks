@@ -1,6 +1,7 @@
 # how to trick a neural network
 
 by Julia Evans <br>
+Stripe <br>
 
 
 * twitter: @b0rk <br>
@@ -56,14 +57,15 @@ notes at http://bit.ly/trick-neural-network
 
 <img src="trick.png">
 
-# can I implement the paper??? (yes)
+# can I implement the paper???
+
+# yes
 
 # a neural network is a function
 
 # 
 
 <img src="corgi.png" width=50%>
-
 
 # 
 
@@ -111,6 +113,8 @@ notes at http://bit.ly/trick-neural-network
 
 # step 5: trick it
 
+# step 4.5: be very confused about neural networks
+
 
 
 # back to math for a second
@@ -130,6 +134,8 @@ notes at http://bit.ly/trick-neural-network
 # which direction do we take the image in?
 
 # best direction = derivative
+
+# derivative = backpropagation
 
 # 
 
@@ -170,6 +176,10 @@ notes at http://bit.ly/trick-neural-network
 <section data-background="panda_vulture_graph.png">
 
 </section>
+
+#
+
+<img src="trick.png">
 
 # what you can do next
 
