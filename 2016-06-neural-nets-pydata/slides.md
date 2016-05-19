@@ -353,8 +353,6 @@ income = 1000 * age + 10000 * gender
 * PhD students = AMAZING
 * NIPS = really fun
 
-# 
-
 # thanks! questions?
 
 * twitter: @b0rk <br>
