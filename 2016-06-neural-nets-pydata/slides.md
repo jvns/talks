@@ -263,6 +263,89 @@ john - american | john - brazilian | john - american | julia - american
 
 <img src="trick.png">
 
+# 
+
+<pre style="font-size:10px; margin: -40px; margin-left: -80px;">
+caffe.set_mode_cpu()
+
+# Load our model! trained by the GOOGLES! <3
+def load_model():
+    BATCH_SIZE = 1
+    net = caffe.Net('/opt/caffe/models/bvlc_googlenet/deploy.prototxt',
+                    '/models/bvlc_googlenet.caffemodel',
+                    caffe.TEST)
+    # change batch size to 1 for faster processing
+    # this just means that we're only processing one image at a time instead of like 50
+    shape = list(net.blobs['data'].data.shape)
+    shape[0] = BATCH_SIZE
+    net.blobs['data'].reshape(*shape)
+    net.blobs['prob'].reshape(BATCH_SIZE, )
+    net.reshape() 
+    return net
+net = load_model()
+# Caffe comes with a handy transformer pipeline so that
+# we can make our images into the format it needs! Yay!
+transformer = caffe.io.Transformer({'data': net.blobs['data'].data.shape})
+transformer.set_transpose('data', (2,0,1))
+transformer.set_raw_scale('data', 255)  # the reference model operates on images in [0,255] range instead of [0,1]
+transformer.set_channel_swap('data', (2,1,0))  # the reference model has channels in BGR order instead of RGB
+def display(data):
+    plt.imshow(transformer.deprocess('data', data))
+def get_label_name(num):
+    options = labels[num].split(',')
+    # remove the tag
+    options[0] = ' '.join(options[0].split(' ')[1:])
+    return ','.join(options[:2])
+def predict(data, n_preds=6, display_output=True, display_image= True):
+    net.blobs['data'].data[...] = data
+    display(data)
+    prob = net.forward()['prob']
+    probs = prob[0]
+    prediction = probs.argmax()
+    top_k = probs.argsort()[::-1]
+    for pred in top_k[:n_preds]:
+        percent = round(probs[pred] * 100, 2)
+        # display it compactly if we're displaying more than the top prediction
+        pred_formatted = "%03d" % pred
+        format_string = "label: {cls} ({label})\ncertainty: {certainty}%"
+        print format_string.format(
+            cls=pred_formatted, label=get_label_name(pred), certainty=percent)
+    return prob
+def compute_gradient(image, intended_outcome):
+    predict(image, display_output=False)
+    # Get an empty set of probabilities
+    probs = np.zeros_like(net.blobs['prob'].data)
+    # Set the probability for our intended outcome to 1
+    probs[0][intended_outcome] = 1
+    # Do backpropagation to calculate the gradient for that outcome
+    gradient = net.backward(prob=probs)
+    return gradient['data'].copy()
+def trick(image, desired_output, n_steps=1):
+    # maintain a list of outputs at each step
+    prediction_steps = []
+    for _ in range(n_steps - 1):
+        preds = predict(image, display_output=False)
+        prediction_steps.append(np.copy(preds))
+        grad = compute_gradient(image, desired_output) # paper towel
+        delta = np.sign(grad)
+        # If there are n steps, we make them size 1/n -- small!
+        image = image + delta * 0.9 / n_steps
+    return image, prediction_steps
+</pre>
+
+# 
+
+```
+def trick(image, desired_output, n_steps=1):
+    for _ in range(n_steps - 1):
+        grad = compute_gradient(image, desired_output) # paper towel
+        delta = np.sign(grad)
+        # If there are n steps, we make them 
+        # each size 1/n -- small!
+        image = image + delta * 0.9 / n_steps
+    return image, prediction_steps
+```
+
 # what you can do next
 
 * read the paper!
@@ -273,7 +356,7 @@ john - american | john - brazilian | john - american | julia - american
 
 #
 
-<h1 style="text-transform:lowercase"> http://bit.ly/trick-neural-network</h1>
+<h1 style="text-transform:none"> http://bit.ly/trick-neural-network</h1>
 
 # if we can trick a neural network, maybe we can understand it
 
@@ -324,6 +407,10 @@ john - american | john - brazilian | john - american | julia - american
 
 # 2. machine learning programs often have bugs 
 
+# 
+
+<h1 style="text-transform:none"> Machine Learning: The High Interest Credit Card of Technical Debt </h1>
+
 # 3. you didn't tell your model about people
 
 
@@ -346,6 +433,10 @@ label: baby
 
 <section data-background="insightful.jpg">
 </section>
+
+#
+
+<h1 style="text-transform:lowercase"> "Consequences of an insightful algorithm" <br> Carina Zona @cczona</h1>
 
 # be skeptical <br> & <br> ask questions
 
@@ -396,9 +487,15 @@ income = 1000 * age + 10000 * gender
 
 # 
 
-## understand nothing <br> ⇝ understand something ⇜ <br> understand everything
+<h1 style="text-transform:none">
+you can trick a neural network
+</h1>
 
-# thanks!
+# 
 
-* twitter: @b0rk <br>
-* blog: jvns.ca
+<h1 style="text-transform:none">
+thanks! <br><br>
+
+twitter: @b0rk <br>
+blog: jvns.ca
+</h1>
