@@ -275,9 +275,13 @@ john - american | john - brazilian | john - american | julia - american
 
 <h1 style="text-transform:lowercase"> http://bit.ly/trick-neural-network</h1>
 
+# if we can trick a neural network, maybe we can understand it
+
 # ok, so machine learning is cool
 
 # machine learning is also *important*
+
+(otherwise i would never get paid to do it)
 
 # 
 
@@ -316,22 +320,39 @@ john - american | john - brazilian | john - american | julia - american
 
 # what if you forget the data from china?
 
-# 2. programs usually have bugs
+# 2. programs often have bugs
 
-# 2. machine learning programs usually have bugs 
+# 2. machine learning programs often have bugs 
 
-# 3. machine learning models can just be wrong
+# 3. you didn't tell your model about people
+
 
 #
 
+<img src="queen.png" width="80%">
+
+# 4. sometimes it just doesn't work
+
+
+label: baby
 <img src="donald-trump-pinata.png" width="80%">
 
-# ask questions
+<!-- ml is only *supposed* to work like 90% of the time anyway-->
+
+# ... or it has unexpected consequences
+
+
+</section>
+
+<section data-background="insightful.jpg">
+</section>
+
+# be skeptical <br> & <br> ask questions
 
 <!-- maybe say the pork in a muslim country here -->
 
 
-# okay, I found a bug. how do I debug it?
+# okay, I found something weird. how do I debug it?
 
 # ★★★ <br> magically guess <br> ★★★
 
@@ -353,6 +374,10 @@ income = 1000 * age + 10000 * gender
 
 <img src="titanic.png" width="80%">
 
+# 
+
+<img src="decision_tree.png" width="80%">
+
 # 2. make two models
 
 1. model your data with a complicated model
@@ -363,7 +388,17 @@ income = 1000 * age + 10000 * gender
 * PhD students = AMAZING
 * NIPS = really fun
 
-# thanks! questions?
+# it's math, <br>not magic
+
+# simple systems can work incredibly well
+
+❤❤❤ linear models ❤❤❤
+
+# 
+
+## understand nothing <br> ⇝ understand something ⇜ <br> understand everything
+
+# thanks!
 
 * twitter: @b0rk <br>
 * blog: jvns.ca
