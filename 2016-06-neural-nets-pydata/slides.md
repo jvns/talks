@@ -121,7 +121,7 @@ john - american | john - brazilian | john - american | julia - american
 
 # yes
 
-# the code for this is is all an ipython notebook
+# the code for this is is all an jupyter notebook
 
 # a neural network is a function
 
@@ -465,10 +465,6 @@ income = 1000 * age + 10000 * gender
 
 <img src="titanic.png" width="80%">
 
-# 
-
-<img src="decision_tree.png" width="80%">
-
 # 2. make two models
 
 1. model your data with a complicated model
@@ -483,14 +479,15 @@ income = 1000 * age + 10000 * gender
 
 # simple systems can work incredibly well
 
-❤❤❤ linear models ❤❤❤
+❤❤❤ linear models ❤❤❤ <br>
+❤❤❤ random forests ❤❤❤ 
 
 # 
 
 <h1 style="text-transform:none">
 you can trick a neural network
 </h1>
-
+ 
 # 
 
 <h1 style="text-transform:none">
