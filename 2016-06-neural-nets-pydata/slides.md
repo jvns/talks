@@ -333,6 +333,16 @@ john - american | john - brazilian | john - american | julia - american
 
 # okay, I found a bug. how do I debug it?
 
+# ★★★ <br> magically guess <br> ★★★
+
+
+# 
+
+<h1 style="text-decoration:line-through">
+
+★★★ <br> magically guess <br> ★★★
+</h1>
+
 # 1. look at the model
 
 # 
