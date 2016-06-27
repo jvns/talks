@@ -1,0 +1,459 @@
+30572 execve("/usr/bin/jvisualvm", ["jvisualvm"], [/* 47 vars */]) = 0
+30573 execve("/bin/ls", ["ls", "-ld", "/usr/bin/jvisualvm"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30574 execve("/usr/bin/expr", ["expr", "lrwxrwxrwx 1 root root 27 Dec  1  2012 /usr/bin/jvisualvm -> /etc/alternatives/jvisualvm", ":", "^.*-> \\(.*\\)$"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30575 execve("/usr/bin/expr", ["expr", "/etc/alternatives/jvisualvm", ":", "^/"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30576 execve("/bin/ls", ["ls", "-ld", "/etc/alternatives/jvisualvm"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30577 execve("/usr/bin/expr", ["expr", "lrwxrwxrwx 1 root root 40 Dec  1  2012 /etc/alternatives/jvisualvm -> /usr/lib/jvm/java-7-oracle/bin/jvisualvm", ":", "^.*-> \\(.*\\)$"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30578 execve("/usr/bin/expr", ["expr", "/usr/lib/jvm/java-7-oracle/bin/jvisualvm", ":", "^/"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30579 execve("/usr/bin/dirname", ["dirname", "/usr/lib/jvm/java-7-oracle/bin/jvisualvm"], [/* 47 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30582 execve("/bin/uname", ["uname"], [/* 48 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30589 execve("/usr/bin/tr", ["tr", "\\012", ":"], [/* 49 vars */] <unfinished ...>
+30588 execve("/bin/grep", ["grep", "-v", "^#", "/usr/lib/jvm/java-7-oracle/lib/visualvm/etc/visualvm.clusters"], [/* 49 vars */] <unfinished ...>
+30589 <... execve resumed> )            = 0
+30588 <... execve resumed> )            = 0
+30590 execve("/bin/grep", ["grep", "-v", "^$"], [/* 49 vars */] <unfinished ...>
+30591 execve("/bin/grep", ["grep", "-v", "platform"], [/* 49 vars */] <unfinished ...>
+30590 <... execve resumed> )            = 0
+30591 <... execve resumed> )            = 0
+30586 --- SIGCHLD (Child exited) @ 0 (0) ---
+30586 --- SIGCHLD (Child exited) @ 0 (0) ---
+30593 execve("/usr/bin/expr", ["expr", "visualvm", ":", "/.*"], [/* 49 vars */]) = 0
+30592 --- SIGCHLD (Child exited) @ 0 (0) ---
+30594 execve("/usr/bin/expr", ["expr", "profiler", ":", "/.*"], [/* 49 vars */]) = 0
+30587 --- SIGCHLD (Child exited) @ 0 (0) ---
+30592 --- SIGCHLD (Child exited) @ 0 (0) ---
+30586 --- SIGCHLD (Child exited) @ 0 (0) ---
+30585 --- SIGCHLD (Child exited) @ 0 (0) ---
+30587 --- SIGCHLD (Child exited) @ 0 (0) ---
+30585 --- SIGCHLD (Child exited) @ 0 (0) ---
+30585 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30597 execve("/bin/grep", ["grep", "-v", "--", "-J-Xmx"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30598 execve("/bin/grep", ["grep", "-v", "--", "-J-XX:MaxPermSize"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30599 execve("/bin/uname", ["uname"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30601 execve("/bin/grep", ["grep", "-v", "^#", "/usr/lib/jvm/java-7-oracle/lib/visualvm/etc/visualvm.clusters"], [/* 49 vars */]) = 0
+30602 execve("/bin/grep", ["grep", "-v", "^$"], [/* 49 vars */]) = 0
+30603 execve("/bin/grep", ["grep", "platform"], [/* 49 vars */]) = 0
+30605 execve("/usr/bin/head", ["head", "-n", "1"], [/* 49 vars */]) = 0
+30600 --- SIGCHLD (Child exited) @ 0 (0) ---
+30600 --- SIGCHLD (Child exited) @ 0 (0) ---
+30600 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 execve("/bin/bash", ["/bin/bash", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/nbexec", "--userdir", "/home/bork/.visualvm/7u14", "--cachedir", "/home/bork/.cache/visualvm/7u14", "--jdkhome", "/usr/lib/jvm/java-7-oracle", "--branding", "visualvm", "--clusters", "/usr/lib/jvm/java-7-oracle/lib/visualvm/visualvm:/usr/lib/jvm/java-7-oracle/lib/visualvm/profiler:", "-J-client", "-J-Xms24m", "-J-Xmx256m", "-J-XX:MaxPermSize=96m", "-J-Dsun.jvmstat.perdata.syncWaitMs=10000", "-J-Dsun.java2d.noddraw=true", "-J-Dsun.java2d.d3d=false", "-J-Dnetbeans.keyring.no.master=true"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30607 execve("/usr/bin/dirname", ["dirname", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/nbexec"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30608 --- SIGCHLD (Child exited) @ 0 (0) ---
+30608 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30611 execve("/usr/bin/expr", ["expr", "X--J-client", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30612 execve("/usr/bin/expr", ["expr", "X--J-Xms24m", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30613 execve("/usr/bin/expr", ["expr", "X--J-Xmx256m", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30614 execve("/usr/bin/expr", ["expr", "X--J-XX:MaxPermSize=96m", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30615 execve("/usr/bin/expr", ["expr", "X--J-Dsun.jvmstat.perdata.syncWaitMs=10000", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30616 execve("/usr/bin/expr", ["expr", "X--J-Dsun.java2d.noddraw=true", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30617 execve("/usr/bin/expr", ["expr", "X--J-Dsun.java2d.d3d=false", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30618 execve("/usr/bin/expr", ["expr", "X--J-Dnetbeans.keyring.no.master=true", ":", "X--J\\(.*\\)"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30619 execve("/usr/lib/jvm/java-7-oracle/bin/java", ["/usr/lib/jvm/java-7-oracle/bin/java", "-XX:+HeapDumpOnOutOfMemoryError", "-cp", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/boot.jar", "org.netbeans.NbExecJavaStartTry"], [/* 49 vars */]) = 0
+30620 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30635 execve("/bin/grep", ["grep", "-v", "--", "-XX:HeapDumpPath="], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30636 execve("/bin/mv", ["mv", "/home/bork/.visualvm/7u14/var/log/heapdump.hprof", "/home/bork/.visualvm/7u14/var/log/heapdump.hprof.old"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30637 --- SIGCHLD (Child exited) @ 0 (0) ---
+30637 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30640 execve("/bin/uname", ["uname"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30642 execve("/usr/bin/gconftool-2", ["/usr/bin/gconftool-2", "--get", "/system/proxy/mode"], [/* 49 vars */]) = 0
+30641 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30643 execve("/bin/uname", ["uname"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30653 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/boot.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30655 execve("/bin/fgrep", ["fgrep", "-v", "libboot.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30656 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-modules.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30658 execve("/bin/fgrep", ["fgrep", "-v", "liborg-openide-modules.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30659 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30661 execve("/bin/fgrep", ["fgrep", "-v", "liborg-openide-util.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30662 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util-lookup.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30664 execve("/bin/fgrep", ["fgrep", "-v", "liborg-openide-util-lookup.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30667 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30669 execve("/bin/fgrep", ["fgrep", "-v", "localeboot_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30671 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30673 execve("/bin/fgrep", ["fgrep", "-v", "localeboot_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30674 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30676 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-modules_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30677 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30679 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-modules_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30680 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30682 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30683 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30685 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util-lookup_ja.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30686 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30688 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util-lookup_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30689 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30691 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util_zh_CN.jar"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30701 execve("/bin/rm", ["rm", "-f", "/home/bork/.visualvm/7u14/update/download/netbeans.dirs"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30702 execve("/bin/rm", ["rm", "-f", "/home/bork/.visualvm/7u14/var/restart"], [/* 49 vars */]) = 0
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30703 execve("/usr/lib/jvm/java-7-oracle/bin/java", ["/usr/lib/jvm/java-7-oracle/bin/java", "-Djdk.home=/usr/lib/jvm/java-7-oracle", "-classpath", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/boot.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-modules.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util-lookup.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/dt.jar:/usr/lib/jvm/java-7-oracle/lib/tools.jar", "-Dnetbeans.default_userdir_root=/home/bork/.visualvm", "-Dnetbeans.system_http_proxy=DIRECT", "-Dnetbeans.system_http_non_proxy_hosts=", "-Dnetbeans.dirs=/usr/lib/jvm/java-7-oracle/lib/visualvm/visualvm:/usr/lib/jvm/java-7-oracle/lib/visualvm/profiler:", "-Dnetbeans.home=/usr/lib/jvm/java-7-oracle/lib/visualvm/platform", "-client", "-Xms24m", "-Xmx256m", "-XX:MaxPermSize=96m", "-Dsun.jvmstat.perdata.syncWaitMs=10000", "-Dsun.java2d.noddraw=true", "-Dsun.java2d.d3d=false", "-Dnetbeans.keyring.no.master=true", "-XX:+HeapDumpOnOutOfMemoryError", "-XX:HeapDumpPath=/home/bork/.visualvm/7u14/var/log/heapdump.hprof", "org.netbeans.Main", "--userdir", "/home/bork/.visualvm/7u14", "--cachedir", "/home/bork/.cache/visualvm/7u14", "--branding", "visualvm"], [/* 49 vars */]) = 0
+30704 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30723 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30723 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30723 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30723 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30714 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30723 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30728 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30713 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30713 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30714 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30745 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30716 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30716 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30726 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30722 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30722 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30710 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30725 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30720 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30725 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30720 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30720 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30720 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30720 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30711 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30703 --- SIGWINCH (Window changed) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGINT (Interrupt) @ 0 (0) ---
+30703 --- SIGHUP (Hangup) @ 0 (0) ---
+3044  --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+30572 --- SIGHUP (Hangup) @ 0 (0) ---
+30572 --- SIGWINCH (Window changed) @ 0 (0) ---
+30572 --- SIGINT (Interrupt) @ 0 (0) ---
+30572 --- SIGCHLD (Child exited) @ 0 (0) ---
+30572 --- SIGHUP (Hangup) @ 0 (0) ---
+30572 +++ killed by SIGHUP +++

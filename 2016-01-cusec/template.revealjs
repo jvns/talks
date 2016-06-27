@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">    
+<head>
+    <meta charset="utf-8">
+    <title>How to read your computer's mind</title>
+    <link rel="stylesheet" href="reveal_js/css/reveal.css">
+    <link rel="stylesheet" href="reveal_js/css/theme/white.css" id="theme">
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="reveal_js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+    <style>
+        .reveal p, .reveal li {
+            font-size: 175%;
+
+        }
+        .reveal img.image {
+            border: none;
+            box-shadow: none;
+        }
+
+        .reveal code {
+            font-family: andale mono;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div class="reveal">
+        <div class="slides">
+$body$
+        </div>
+    </div>
+    <script src="reveal_js/lib/js/head.min.js"></script>
+    <script src="reveal_js/js/reveal.js"></script>
+    <script>
+        // Required, even if empty.
+        Reveal.initialize({
+            width: 1024,
+            height: 768,
+            controls: false,
+            history: true,
+            progress: true,
+            rollingLinks: false,
+            transition: "none",
+            maxScale: 10.0,
+        });
+    </script>
+</body>
+</html>

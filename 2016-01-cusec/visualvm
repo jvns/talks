@@ -1,0 +1,204 @@
+23573 execve("/usr/bin/jvisualvm", ["jvisualvm"], [/* 48 vars */]) = 0
+23574 execve("/bin/ls", ["ls", "-ld", "/usr/bin/jvisualvm"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23575 execve("/usr/bin/expr", ["expr", "lrwxrwxrwx 1 root root 27 Dec  1  2012 /usr/bin/jvisualvm -> /etc/alternatives/jvisualvm", ":", "^.*-> \\(.*\\)$"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23576 execve("/usr/bin/expr", ["expr", "/etc/alternatives/jvisualvm", ":", "^/"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23577 execve("/bin/ls", ["ls", "-ld", "/etc/alternatives/jvisualvm"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23578 execve("/usr/bin/expr", ["expr", "lrwxrwxrwx 1 root root 40 Dec  1  2012 /etc/alternatives/jvisualvm -> /usr/lib/jvm/java-7-oracle/bin/jvisualvm", ":", "^.*-> \\(.*\\)$"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23579 execve("/usr/bin/expr", ["expr", "/usr/lib/jvm/java-7-oracle/bin/jvisualvm", ":", "^/"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23580 execve("/usr/bin/dirname", ["dirname", "/usr/lib/jvm/java-7-oracle/bin/jvisualvm"], [/* 48 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23583 execve("/bin/uname", ["uname"], [/* 49 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23590 execve("/usr/bin/tr", ["tr", "\\012", ":"], [/* 50 vars */] <unfinished ...>
+23589 execve("/bin/grep", ["grep", "-v", "^#", "/usr/lib/jvm/java-7-oracle/lib/visualvm/etc/visualvm.clusters"], [/* 50 vars */] <unfinished ...>
+23590 <... execve resumed> )            = 0
+23589 <... execve resumed> )            = 0
+23591 execve("/bin/grep", ["grep", "-v", "^$"], [/* 50 vars */] <unfinished ...>
+23592 execve("/bin/grep", ["grep", "-v", "platform"], [/* 50 vars */]) = 0
+23591 <... execve resumed> )            = 0
+23587 --- SIGCHLD (Child exited) @ 0 (0) ---
+23587 --- SIGCHLD (Child exited) @ 0 (0) ---
+23587 --- SIGCHLD (Child exited) @ 0 (0) ---
+23594 execve("/usr/bin/expr", ["expr", "visualvm", ":", "/.*"], [/* 50 vars */]) = 0
+23593 --- SIGCHLD (Child exited) @ 0 (0) ---
+23595 execve("/usr/bin/expr", ["expr", "profiler", ":", "/.*"], [/* 50 vars */]) = 0
+23588 --- SIGCHLD (Child exited) @ 0 (0) ---
+23593 --- SIGCHLD (Child exited) @ 0 (0) ---
+23587 --- SIGCHLD (Child exited) @ 0 (0) ---
+23586 --- SIGCHLD (Child exited) @ 0 (0) ---
+23588 --- SIGCHLD (Child exited) @ 0 (0) ---
+23586 --- SIGCHLD (Child exited) @ 0 (0) ---
+23586 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23598 execve("/bin/grep", ["grep", "-v", "--", "-J-Xmx"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23599 execve("/bin/grep", ["grep", "-v", "--", "-J-XX:MaxPermSize"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23600 execve("/bin/uname", ["uname"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23602 execve("/bin/grep", ["grep", "-v", "^#", "/usr/lib/jvm/java-7-oracle/lib/visualvm/etc/visualvm.clusters"], [/* 50 vars */] <unfinished ...>
+23603 execve("/bin/grep", ["grep", "-v", "^$"], [/* 50 vars */] <unfinished ...>
+23602 <... execve resumed> )            = 0
+23603 <... execve resumed> )            = 0
+23604 execve("/bin/grep", ["grep", "platform"], [/* 50 vars */]) = 0
+23606 execve("/usr/bin/head", ["head", "-n", "1"], [/* 50 vars */]) = 0
+23601 --- SIGCHLD (Child exited) @ 0 (0) ---
+23601 --- SIGCHLD (Child exited) @ 0 (0) ---
+23601 --- SIGCHLD (Child exited) @ 0 (0) ---
+23601 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 execve("/bin/bash", ["/bin/bash", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/nbexec", "--userdir", "/home/bork/.visualvm/7u14", "--cachedir", "/home/bork/.cache/visualvm/7u14", "--jdkhome", "/usr/lib/jvm/java-7-oracle", "--branding", "visualvm", "--clusters", "/usr/lib/jvm/java-7-oracle/lib/visualvm/visualvm:/usr/lib/jvm/java-7-oracle/lib/visualvm/profiler:", "-J-client", "-J-Xms24m", "-J-Xmx256m", "-J-XX:MaxPermSize=96m", "-J-Dsun.jvmstat.perdata.syncWaitMs=10000", "-J-Dsun.java2d.noddraw=true", "-J-Dsun.java2d.d3d=false", "-J-Dnetbeans.keyring.no.master=true"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23608 execve("/usr/bin/dirname", ["dirname", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/nbexec"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23609 --- SIGCHLD (Child exited) @ 0 (0) ---
+23609 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23612 execve("/usr/bin/expr", ["expr", "X--J-client", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23613 execve("/usr/bin/expr", ["expr", "X--J-Xms24m", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23614 execve("/usr/bin/expr", ["expr", "X--J-Xmx256m", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23615 execve("/usr/bin/expr", ["expr", "X--J-XX:MaxPermSize=96m", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23616 execve("/usr/bin/expr", ["expr", "X--J-Dsun.jvmstat.perdata.syncWaitMs=10000", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23617 execve("/usr/bin/expr", ["expr", "X--J-Dsun.java2d.noddraw=true", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23618 execve("/usr/bin/expr", ["expr", "X--J-Dsun.java2d.d3d=false", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23619 execve("/usr/bin/expr", ["expr", "X--J-Dnetbeans.keyring.no.master=true", ":", "X--J\\(.*\\)"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23620 execve("/usr/lib/jvm/java-7-oracle/bin/java", ["/usr/lib/jvm/java-7-oracle/bin/java", "-XX:+HeapDumpOnOutOfMemoryError", "-cp", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/boot.jar", "org.netbeans.NbExecJavaStartTry"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23635 execve("/bin/grep", ["grep", "-v", "--", "-XX:HeapDumpPath="], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23636 execve("/bin/mv", ["mv", "/home/bork/.visualvm/7u14/var/log/heapdump.hprof", "/home/bork/.visualvm/7u14/var/log/heapdump.hprof.old"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23637 --- SIGCHLD (Child exited) @ 0 (0) ---
+23637 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23640 execve("/bin/uname", ["uname"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23642 execve("/usr/bin/gconftool-2", ["/usr/bin/gconftool-2", "--get", "/system/proxy/mode"], [/* 50 vars */]) = 0
+23641 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23646 execve("/bin/uname", ["uname"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23656 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/boot.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23658 execve("/bin/fgrep", ["fgrep", "-v", "libboot.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23659 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-modules.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23661 execve("/bin/fgrep", ["fgrep", "-v", "liborg-openide-modules.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23662 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23664 execve("/bin/fgrep", ["fgrep", "-v", "liborg-openide-util.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23665 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util-lookup.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23667 execve("/bin/fgrep", ["fgrep", "-v", "liborg-openide-util-lookup.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23670 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23672 execve("/bin/fgrep", ["fgrep", "-v", "localeboot_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23673 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23675 execve("/bin/fgrep", ["fgrep", "-v", "localeboot_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23676 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23678 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-modules_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23679 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23681 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-modules_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23682 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23684 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23685 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23689 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util-lookup_ja.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23690 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23692 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util-lookup_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23693 execve("/usr/bin/basename", ["basename", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23695 execve("/bin/fgrep", ["fgrep", "-v", "localeorg-openide-util_zh_CN.jar"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23705 execve("/bin/rm", ["rm", "-f", "/home/bork/.visualvm/7u14/update/download/netbeans.dirs"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23706 execve("/bin/rm", ["rm", "-f", "/home/bork/.visualvm/7u14/var/restart"], [/* 50 vars */]) = 0
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23707 execve("/usr/lib/jvm/java-7-oracle/bin/java", ["/usr/lib/jvm/java-7-oracle/bin/java", "-Djdk.home=/usr/lib/jvm/java-7-oracle", "-classpath", "/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/boot.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-modules.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/org-openide-util-lookup.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/boot_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-modules_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_ja.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util-lookup_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/visualvm/platform/lib/locale/org-openide-util_zh_CN.jar:/usr/lib/jvm/java-7-oracle/lib/dt.jar:/usr/lib/jvm/java-7-oracle/lib/tools.jar", "-Dnetbeans.default_userdir_root=/home/bork/.visualvm", "-Dnetbeans.system_http_proxy=DIRECT", "-Dnetbeans.system_http_non_proxy_hosts=", "-Dnetbeans.dirs=/usr/lib/jvm/java-7-oracle/lib/visualvm/visualvm:/usr/lib/jvm/java-7-oracle/lib/visualvm/profiler:", "-Dnetbeans.home=/usr/lib/jvm/java-7-oracle/lib/visualvm/platform", "-client", "-Xms24m", "-Xmx256m", "-XX:MaxPermSize=96m", "-Dsun.jvmstat.perdata.syncWaitMs=10000", "-Dsun.java2d.noddraw=true", "-Dsun.java2d.d3d=false", "-Dnetbeans.keyring.no.master=true", "-XX:+HeapDumpOnOutOfMemoryError", "-XX:HeapDumpPath=/home/bork/.visualvm/7u14/var/log/heapdump.hprof", "org.netbeans.Main", "--userdir", "/home/bork/.visualvm/7u14", "--cachedir", "/home/bork/.cache/visualvm/7u14", "--branding", "visualvm"], [/* 50 vars */]) = 0
+23708 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23724 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23724 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23724 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23742 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23717 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23734 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23707 --- SIGINT (Interrupt) @ 0 (0) ---
+23707 --- SIGINT (Interrupt) @ 0 (0) ---
+23754 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23718 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23717 --- SIGSEGV (Segmentation fault) @ 0 (0) ---
+23707 --- SIGINT (Interrupt) @ 0 (0) ---
+23707 --- SIGHUP (Hangup) @ 0 (0) ---
+23573 --- SIGHUP (Hangup) @ 0 (0) ---
+23573 --- SIGINT (Interrupt) @ 0 (0) ---
+23573 --- SIGCHLD (Child exited) @ 0 (0) ---
+23573 --- SIGHUP (Hangup) @ 0 (0) ---
+23573 +++ killed by SIGHUP +++
