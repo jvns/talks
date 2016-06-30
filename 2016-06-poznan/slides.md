@@ -1,6 +1,6 @@
-# what's systems programming?
+# what's systems <br>programming?
 
-* programming where you get a little closer to the metal
+programming where you get a little closer to the metal
 
 # this talk:
 
@@ -119,7 +119,19 @@ Read a btree page, page number 449
 
 # experiment 3: <br> write a TCP stack
 
-# i blog my experiments
+# experiment 3: <br> write a TCP stack <br> in python
+
+# 
+
+<pre>
+ip_header = IP(dst=dest_ip, src=src_ip)
+syn = TCP(dport=80, sport=59333, 
+          ack=0, flags="S")
+# Send the SYN packet to Google
+response = srp(ip_header + syn)
+</pre>
+
+
 
 http://jvns.ca
 
@@ -127,6 +139,7 @@ http://jvns.ca
 
 * how TCP packets are put together!
 * you can write a 10% working TCP from scratch in 2 weeks
+* python can't keep up
 
 # experiment 4: <br> concurrency
 
@@ -139,17 +152,36 @@ http://jvns.ca
 int counter;
 
 void *AddThings(void *threadid) {
-   for (int i = 0; i < NUM_INCREMENTS; i++)
+   for (int i = 0; i < 10000; i++)
         counter += 1;
    pthread_exit(NULL);
 }
 ```
 
+# wrong answer
+
+# mutex
+
+<pre>
+pthread_mutex_lock(&mutex);
+counter += 1;
+</pre>
+```
+
+# "atom"
+
+```
+ __sync_add_and_fetch(&counter, 1);
+```
+
 # what I learned
 
-2 ways of doing concurrency:
+* atoms are faster than mutexes
 
-* atoms
-* mutexes
+# i blog my experiments
+
+# 
+
+"can you discuss the pros and cons of using a lock-free approach for implementing a thread-safe hashmap?"
 
 # do enough <br>experiments <br><br> end up with actual knowledge
