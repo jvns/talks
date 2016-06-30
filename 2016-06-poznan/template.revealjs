@@ -2,8 +2,9 @@
 <html lang="en">    
 <head>
     <meta charset="utf-8">
-    <title>debugging python without python</title>
+    <title>systems programming is for everyone</title>
     <link rel="stylesheet" href="reveal_js/css/reveal.min.css">
+    <link rel="stylesheet" href="reveal_js/css/fullscreen-img.css">
     <link rel="stylesheet" href="reveal_js/css/theme/solarized.css" id="theme">
     <!-- If the query includes 'print-pdf', use the PDF print sheet -->
     <script>
@@ -92,6 +93,9 @@ $body$
             progress: true,
             rollingLinks: false,
             transition: "none",
+            dependencies: [
+            { src: 'reveal_js/lib/js/fullscreen-img.js' }
+            ],
             history: true,
             maxScale: 10.0,
         });

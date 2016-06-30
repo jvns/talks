@@ -1,25 +1,27 @@
-# systems <br> programming <br> is for everyone
+# systems <br>programming <br>is for everyone
 
-by Julia Evans <br>
+Julia Evans <br>
 Stripe<br>
 
 * twitter: @b0rk <br>
 * blog: jvns.ca
 
-<br><br>
-Tweet questions to @b0rk
 
-# what's systems <br> programming?
+# 
+
+<img src="intermediate.png" width="100%">
 
 # 
 
 <div style="font-size:200%; line-height: 200%;">
 perl | go | c++ | fortran <br>
-php | python | java | smalltalk <br>
+php | python | java <br>
+golang | smalltalk <br>
 INTERCAL | BASIC
 </div>
 
-# mostly Linux
+
+# Linux-only
 
 # your program <br> = <br> black box
 
@@ -111,7 +113,7 @@ strace -e open bash
 
 # bashrc wins!
 
-# other awesome <br> system calls
+# other awesome system calls
 
 * `write` for log files
 * `execve` for starting programs
@@ -123,34 +125,50 @@ strace -e open bash
 
 <img src="strace_zine.jpg">
 
-# Chapter 2: <br> The Case of the <br> Polish Website
+# Chapter 2: <br> The Case of the <br> French Website
 
 # 
 
-<img src="firefox-polish-website.png">
+<img src="french-website-chrome.png">
 
 # 
 
-<img src="curl-polish-website.png">
+<img src="curl-french-website.png">
 
 # ???
 
 # network spying TO THE RESCUE
 
-# tcpdump
+# 
 
-<pre class="big">sudo tcpdump port 5000 -i any 
--o polish-website.pcap </pre></h2>
+```
+sudo ngrep -d lo 5000
+interface: lo (127.0.0.0/255.0.0.0)
+match: 5000
+####
+T 127.0.0.1:45438 -> 127.0.0.1:5000 [AP]
+  GET / HTTP/1.1..Host: localhost:5000..Connection:
+keep-alive..Cache-Control: max-age=0..Accept:
+text/html,application/xhtml+xml,application
+/xml;q=0.9,image/webp,*/*;q=0.8..User-Agent: Mozilla/5.0 (X11; Linux
+x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.53 Saf
+ari/537.36..DNT: 1..Accept-Encoding: gzip, deflate,
+sdch..Accept-Language: en-US,en;q=0.8..Cookie:
+username-localhost-8888="2|1:0|10:142841
+1879|23:username-localhost-8888|48:MjYzMTc2NGMtYTA1MC00YjNkLTkyYTktNGFhY2U3NmUwMjdj|f5f14c08e970bd6c81f8efe3f3a8b98edd85de834e88c250e96fdb7
+fab7ee279"....
+#######################
+T 127.0.0.1:45440 -> 127.0.0.1:5000 [AP]
+  GET / HTTP/1.1..User-Agent: curl/7.22.0 (x86_64-pc-linux-gnu)
+libcurl/7.22.0 OpenSSL/1.0.1 zlib/1.2.3.4 libidn/1.23
+librtmp/2.3..Host: localhost:5000..Accept: */*....                                                                                                                
+##################
+```
 
-# wireshark
+# 
 
 <pre class="big">
-wireshark polish-website.pcap
-</pre>
-
-#
-<pre class="big">
-Accept-Language: en-US,en;q=0.5\r\n
+Accept-Language: en-US
 </pre>
 
 #
@@ -180,8 +198,7 @@ Accept-Language: en-US,en;q=0.5\r\n
 
 <pre class="big">
 $ time python mystery_1.py
-0.09user 0.01system
-0:02.11elapsed 5%CPU 
+0.09user 0.01system 0:02.11elapsed 5%CPU 
 </pre>
 
 # What is it waiting for? 
@@ -241,28 +258,14 @@ for i in xrange(14000000):
 
 <pre class="big">
 $ time python mystery_3.py 
-0.03user 4.11system
-0:04.40elapsed 94%CPU
+0:02.61elapsed 62%CPU
+$ time python mystery_3.py 
+0:10.61elapsed 10%CPU
 </pre>
 
 # demo demo
 
-# 
-
-<pre class="big">
-29,81%  [kernel] _aesni_enc1        
-1,88%   [kernel] ecryptfs_write_begin     ▒
-1,51%   [kernel] raw_spin_lock          
-</pre>
-
-#  mystery solved
-
-<pre class="big">
-filename = '/home/bork/fake.txt'
-</pre>
-
-
-
+# we win
 
 # your program <br> = <br> black box
 
