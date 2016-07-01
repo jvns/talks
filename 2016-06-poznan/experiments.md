@@ -1,13 +1,6 @@
-# what's systems <br>programming?
+# programming experiments
 
-programming where you get a little closer to the metal
-
-# this talk:
-
-1. programming experiments
-2. debugging like a wizard
-
-# rules of programming experiments 
+# rules of <br>programming <br> experiments 
 
 1. it doesn't have to work
 1. you don't have to finish it
@@ -20,7 +13,9 @@ remember it doesn't have to work
 
 # what I learned
 
-* 
+* having more than once process is hard
+* filesystems are hard
+* operating systems are SO COMPLICATED
 
 
 # experiment 2: <br> database surgery
@@ -131,9 +126,6 @@ syn = TCP(dport=80, sport=59333,
 response = srp(ip_header + syn)
 </pre>
 
-
-
-http://jvns.ca
 
 # what I learned
 

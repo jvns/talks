@@ -15,10 +15,13 @@
 TEMPLATE=           template.revealjs
 PANDOC_OPTIONS=     --section-divs -t html5 -s --template ${TEMPLATE}
 
-all: slides.html
+all: slides.html experiments.html
 
 slides.html: slides.md template.revealjs
 	pandoc ${PANDOC_OPTIONS} -o slides.html slides.md
+
+experiments.html: experiments.md template.revealjs
+	pandoc ${PANDOC_OPTIONS} -o experiments.html experiments.md
 
 clean:
 	rm -f slides.html
