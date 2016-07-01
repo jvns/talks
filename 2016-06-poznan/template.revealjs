@@ -26,6 +26,10 @@
             line-height: 1em;
         }
 
+        .reveal h1.none{
+            text-transform: none;
+        }
+
         .reveal pre.big {
             font-family: andale mono;
             font-size: 1.4em;

@@ -9,17 +9,19 @@ Stripe<br>
 <br><br>
 Tweet questions to @b0rk
 
-# what's systems <br> programming?
+# 
+
+<h1 class="none"> 🐞🐞 bugs 🐞🐞</h1>
 
 # 
 
 <div style="font-size:200%; line-height: 200%;">
 perl | go | c++ | fortran <br>
 php | python | java | smalltalk <br>
-INTERCAL | BASIC
+INTERCAL | BASIC | erlang
 </div>
 
-# mostly Linux
+# mostly Linux 🐧 
 
 # your program <br> = <br> black box
 
@@ -61,7 +63,7 @@ When I go to http://google.com, kernel code runs for:
 + Allocating memory
 + Communicating with the graphics card
 
-# How to call operating system code
+# How to call <br>operating system code
 
 # ★★★ <br> System calls!!! <br> ★★★ 
 
@@ -76,7 +78,7 @@ When I go to http://google.com, kernel code runs for:
 + Your OS does tons of stuff
 + Programs tell it what to do using system calls
 
-# Using systems knowledge to debug
+# Using systems <br> knowledge to debug
 
 # Chapter 1: <br> The Case of the <br> Mystery Config File
 
@@ -86,7 +88,7 @@ When I go to http://google.com, kernel code runs for:
 Does bash use `.bash_profile` or `.bashrc`??!??
 </div>
 
-# strace <br> = <br> wizardry
+# strace <br> = <br> ⚡ wizardry ⚡
 
 # strace <br> = <br> tracing system calls
 
@@ -119,9 +121,32 @@ strace -e open bash
 
 # strace zine
 
-#
-
 <img src="strace_zine.jpg">
+
+# opensnoop
+
+<h2> linux 🐧 & OS X 🍎 !</h2>
+
+<pre class="big">
+https://github.com/iovisor/bcc
+</pre>
+
+
+# 
+
+<pre class="big">
+opensnoop(8)                                                                                 System Manager's Manual                                                                                opensnoop(8)
+
+NAME
+       opensnoop - Trace open() syscalls.
+       Uses Linux eBPF/bcc.
+
+...
+
+AUTHOR
+       Brendan Gregg
+
+</pre>
 
 # Chapter 2: <br> The Case of the <br> Polish Website
 
@@ -157,6 +182,16 @@ Accept-Language: en-US,en;q=0.5\r\n
 
 <img src="curl-english-website.png">
 
+# wireshark: assigner of blame
+
+
+# 
+
+<h1 style="text-transform: none">why tcpdump is fast: BPF (berkeley packet filter)</h1>
+
+<pre class="big">
+src ip 192.168.0.1 or dst ip 192.168.0.1
+</pre>
 
 # network spying tools
 
@@ -220,7 +255,9 @@ app.run()
 
 <pre class="big">
 $ time python mystery_2.py
-2.74user 0.00system 0:02.74elapsed 99%CPU 
+2.74user 0.00system
+
+2.74 seconds 99%CPU 
 </pre>
 
 # Use a python profiler
@@ -242,7 +279,8 @@ for i in xrange(14000000):
 <pre class="big">
 $ time python mystery_3.py 
 0.03user 4.11system
-0:04.40elapsed 94%CPU
+
+4.40 seconds elapsed 94%CPU
 </pre>
 
 # demo demo
@@ -255,20 +293,36 @@ $ time python mystery_3.py
 1,51%   [kernel] raw_spin_lock          
 </pre>
 
+
 #  mystery solved
 
 <pre class="big">
 filename = '/home/bork/fake.txt'
 </pre>
 
+# 
 
+<h1 style="text-transform: none">❤ dstat ❤</h1>
 
+# 
+
+<h1 style="text-transform: none">❤ perf top ❤</h1>
+
+# works great with the JVM & node 
+
+<img src="perf-map-agent.png" width="100%">
+
+#
+
+<img src="rust_mutex_flamegraph.svg" width="100%">
 
 # your program <br> = <br> black box
 
 # there are a lot of awesome tools
 
 # learn your operating system
+
+(or your browser.)
 
 # 
 
@@ -283,7 +337,4 @@ Recurse Center
 * learn more by reading my blog: http://jvns.ca
 
 <br><br>
-Come get a strace zine!!!!!
-
-[twitter]:  https://twitter.com/b0rk
-[website]: http://jvns.ca
+Come ask me questions & get a zine!
