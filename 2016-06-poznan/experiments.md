@@ -1,4 +1,4 @@
-# programming experiments
+# programming <br> experiments
 
 # rules of <br>programming <br> experiments 
 
@@ -116,6 +116,10 @@ Read a btree page, page number 449
 
 # experiment 3: <br> write a TCP stack <br> in python
 
+#
+
+<img src="tcp.png">
+
 # 
 
 <pre>
@@ -158,13 +162,12 @@ void *AddThings(void *threadid) {
 pthread_mutex_lock(&mutex);
 counter += 1;
 </pre>
-```
 
 # "atom"
 
-```
+<pre>
  __sync_add_and_fetch(&counter, 1);
-```
+</pre>
 
 # what I learned
 

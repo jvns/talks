@@ -1,0 +1,9 @@
+opensnoop(8)                                                                                 System Manager's Manual                                                                                opensnoop(8)
+
+NAME
+       opensnoop - Trace open() syscalls. Uses Linux eBPF/bcc.
+
+...
+
+AUTHOR
+       Brendan Gregg
