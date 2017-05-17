@@ -171,20 +171,11 @@ NULL, NULL) = 512
 
 <img src="warning.png">
 
+# `perf trace`
+
 # Understanding your operating system makes you a better programmer
 
-# perf: <br> track L1 cache misses!
-
-# perf
-
-```
-# program designed to be good
-        17,175,214 L1-dcache-misses #   11.48% of all L1-dcache hits  
-       149,568,438 L1-dcache-loads
-# program designed to be bad
-     1,031,902,483 L1-dcache-misses #  193.16% of all L1-dcache hits  
-       534,219,219 L1-dcache-loads
-```
+# "oh, it's opening 200,000 files, that's why it's slow"
 
 # perf
 
@@ -228,7 +219,7 @@ NULL, NULL) = 512
 
 # Strategy 2: <br> Read some <br> kernel code
 
-# BUT THAT'S TERRIFYING!!!!!
+# but there are 20 million lines of kernel code?
 
 Pick one system call and try to understand one thing about it
 
@@ -247,6 +238,8 @@ OS X kernel: [`http://opensource.apple.com`](http://opensource.apple.com)
 <img src="chmod-code-crossed-out.png" class="image">
 
 # Linux Weekly News!
+
+"2038: only 21 years away"
 
 # Strategy 3: <br> Write a <br> Linux kernel module
 
@@ -270,12 +263,14 @@ DEMO DEMO DEMO
 
 
 
-# Okay no more <br> code I promise
+# no more code
 
 # Strategy 4: <br> Read a book
 
 * Linux Kernel Development by Robert Love
 * Linux Kernel Networking by Rami Rosen
+
+# slab allocators!
 
 
 # Strategy 5: <br> Write your own OS
