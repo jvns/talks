@@ -26,6 +26,7 @@ Stripe<br>
     a. Do the Eudalypta challenge
     a. Write your own operating system
     a. Do an internship
+    a. Go to a conference
 
 # ONLY LINUX
 
@@ -219,6 +220,7 @@ NULL, NULL) = 512
 1. Do the Eudalypta challenge
 1. Write your own operating system
 1. Do an internship
+1. Go to a conference
 
 # Strategies for getting started
 
@@ -244,7 +246,7 @@ OS X kernel: [`http://opensource.apple.com`](http://opensource.apple.com)
 
 <img src="chmod-code-crossed-out.png" class="image">
 
-# LWN!
+# Linux Weekly News!
 
 # Strategy 3: <br> Write a <br> Linux kernel module
 
@@ -295,6 +297,15 @@ DEMO DEMO DEMO
 + Google Summer of Code
 + GNOME Outreach Program for Women
 
+# Strategy 8: <br> Go to a conference!
+
+# netdev
+
+# 
+
+you can write C code to filter packets that runs inside the Linux
+kernel! (eBPF + XDP)
+
 # kernels at work
 
 # "we upgraded to 2TB of RAM and now my program doesn't work"
@@ -321,5 +332,5 @@ DEMO DEMO DEMO
 
 # Questions?
 
-[`twitter.com/b0rk`][twitter]  <br>
-[`jvns.ca`][website]
+`twitter.com/b0rk` <br>
+blog: `jvns.ca`
