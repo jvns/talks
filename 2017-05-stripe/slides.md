@@ -22,6 +22,7 @@ Stripe<br>
     a. Strace all the things!
     a. Read some kernel code!
     a. Write a kernel module!
+    a. Read a book!
     a. Do the Eudalypta challenge
     a. Write your own operating system
     a. Do an internship
@@ -271,12 +272,13 @@ DEMO DEMO DEMO
 
 # Strategy 4: <br> Read a book
 
-Linux Kernel Development by Robert Love
+* Linux Kernel Development by Robert Love
+* Linux Kernel Networking by Rami Rosen
 
 
 # Strategy 5: <br> Write your own OS
 
-Not as scary as it sounds. I promise!
+(sort of)
 
 # OS blog posts
 
@@ -292,6 +294,28 @@ Not as scary as it sounds. I promise!
 
 + Google Summer of Code
 + GNOME Outreach Program for Women
+
+# kernels at work
+
+# "we upgraded to 2TB of RAM and now my program doesn't work"
+
+# 
+
+<img src="perf_screenshot.png" class="image">
+
+# change_protection
+
+"something to do with virtual memory??"
+
+# page fault
+
+"Understanding the Linux virtual memory manager"
+
+200 pages + 500 pages of source code
+
+# "I don't know what's wrong but it's definitely the kernel's fault"
+
+# upgrade the kernel: everything is fixed!
 
 # You can be a kernel hacker
 
