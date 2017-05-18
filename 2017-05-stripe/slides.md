@@ -9,16 +9,12 @@ Stripe<br>
 [twitter]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
 
-# 
-
-<img src="hackerschool_logo.png" class="image">
-
 # Where we're going
 
 + WTF is a kernel?
 + Why should you care?
     + SO MANY REASONS
-+ Strategies for getting started with kernel programming
++ Strategies for learning about the Linux kernel
     a. Strace all the things!
     a. Read some kernel code!
     a. Write a kernel module!
@@ -169,7 +165,7 @@ NULL, NULL) = 512
 
 # 
 
-<img src="warning.png">
+<img src="warning.png" width=50%>
 
 # `perf trace`
 
@@ -192,6 +188,10 @@ NULL, NULL) = 512
 # Understanding your operating system makes you a better programmer
 
 # Treat your programs as a black box
+
+# 
+
+<img src="debugging-tools-cover.png" width=50%>
 
 # OKAY AWESOME LET'S LEARN
 
@@ -239,7 +239,7 @@ OS X kernel: [`http://opensource.apple.com`](http://opensource.apple.com)
 
 # Linux Weekly News!
 
-"2038: only 21 years away"
+overlayfs!
 
 # Strategy 3: <br> Write a <br> Linux kernel module
 
@@ -263,12 +263,15 @@ DEMO DEMO DEMO
 
 
 
-# no more code
-
 # Strategy 4: <br> Read a book
 
-* Linux Kernel Development by Robert Love
-* Linux Kernel Networking by Rami Rosen
+# 
+
+<img src="lkd.jpg" class="image" width=50%>  
+
+# 
+
+<img src="lkn.jpg" class="image" width=50%> 
 
 # slab allocators!
 
@@ -283,14 +286,13 @@ DEMO DEMO DEMO
 * WHY IS MY OPERATING SYSTEM BEING DELETED WHILE IT'S RUNNING
 
 
-# Strategy 6: <br> Do the Eudalypta challenge
+# Strategy 6: <br> Do the  Eudyptula challenge
 
 # Strategy 7: <br> Do a Linux kernel <br> internship
 
-# Linux Internships
+#
 
-+ Google Summer of Code
-+ GNOME Outreach Program for Women
+<img src="outreachy-poster.jpg" class="image">
 
 # Strategy 8: <br> Go to a conference!
 
@@ -300,6 +302,8 @@ DEMO DEMO DEMO
 
 you can write C code to filter packets that runs inside the Linux
 kernel! (eBPF + XDP)
+
+# tc: slow down your brother's internet
 
 # kernels at work
 
@@ -325,7 +329,11 @@ kernel! (eBPF + XDP)
 
 # You can be a kernel hacker
 
+(or at least understand Linux better ❤ ❤ ❤ )
+
 # Questions?
 
+Julia Evans <br>
 `twitter.com/b0rk` <br>
-blog: `jvns.ca`
+`jvns.ca` <br>
+`jvns.ca/zines`
