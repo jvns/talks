@@ -1,17 +1,18 @@
 # You can be a <br>kernel hacker
 
 by Julia Evans <br>
-Stripe<br>
 [`twitter.com/b0rk`][twitter]  <br>
 [`jvns.ca`][website]  <br>
+[`wizardzines.com`][zines]  <br>
 
 [github]: https://github.com/jvns
 [twitter]:  https://twitter.com/b0rk
 [website]: http://jvns.ca
+[zines]: https://wizardzines.com
 
 # 
 
-<img src="hackerschool_logo.png" class="image">
+<img width="500px" src="hackerschool_logo.png" class="image">
 
 # Where we're going
 
@@ -22,7 +23,6 @@ Stripe<br>
     a. Strace all the things!
     a. Read some kernel code!
     a. Write a kernel module!
-    a. Do the Eudalypta challenge
     a. Write your own operating system
     a. Do an internship
 
@@ -63,7 +63,7 @@ System calls!!!
 + It's fun
 + **You'll become a better programmer**
 
-# Using systems knowledge to debug
+# Using systems <br>knowledge to debug
 
 # strace
 
@@ -167,7 +167,7 @@ NULL, NULL) = 512
 
 # 
 
-<img src="warning.png">
+<img width="500px" src="warning.png">
 
 # Understanding your operating system makes you a better programmer
 
@@ -200,7 +200,7 @@ NULL, NULL) = 512
 
 # Treat your programs as a black box
 
-# OKAY AWESOME LET'S LEARN
+# OKAY AWESOME <br>LET'S LEARN
 
 # Usual strategies
 
@@ -214,11 +214,10 @@ NULL, NULL) = 512
 1. Strace all the things!
 1. Read some kernel code!
 1. Write a kernel module!
-1. Do the Eudalypta challenge
 1. Write your own operating system
 1. Do an internship
 
-# Strategies for getting started
+# Strategies for <br>getting started
 
 # Strategy 1: <br> strace all the things!
 
@@ -278,14 +277,12 @@ Not as scary as it sounds. I promise!
 * WHY IS MY OPERATING SYSTEM BEING DELETED WHILE IT'S RUNNING
 
 
-# Strategy 5: <br> Do the Eudalypta challenge
-
-# Strategy 6: <br> Do a Linux kernel <br> internship
+# Strategy 5: <br> Do a Linux kernel <br> internship
 
 # Linux Internships
 
 + Google Summer of Code
-+ GNOME Outreach Program for Women
++ Outreachy
 
 # You can be a kernel hacker
 
