@@ -14,6 +14,11 @@ by Julia Evans <br>
 
 <img width="500px" src="hackerschool_logo.png" class="image">
 
+# our goals
+
++ learning about operating systems is not that hard
++ and knowing about them will help you in your regular programming job!
+
 # Where we're going
 
 + WTF is a kernel?
@@ -48,7 +53,7 @@ System calls!!!
 
 # System calls: <br> an OS's API
 
-* open a file! (`open`)
+* open a file! (`openat`)
 * start a program! (`execve`)
 * change a file's permissions! (`chmod`)
 
@@ -97,14 +102,14 @@ access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 # open
 
 ```
-strace -etrace=open google-chrome
+strace -e openat google-chrome
 ```
 <img src="consent-to-send-stats.png">
 
 # open
 
 ```
-strace -etrace=open google-chrome
+strace -e openat google-chrome
 ```
 <img src="consent-to-send-stats-censored.png">
 
@@ -160,7 +165,7 @@ NULL, NULL) = 512
 
 # strace
 
-* what ssh command is my Ruby program running?
+* what config files does this program use?
 * why is my program using `libblah.so.5` instead of `.so.6`?
 * what data am I sending to Google?
 * WHERE ARE MY LOG FILES?!
@@ -188,13 +193,17 @@ NULL, NULL) = 512
 
 <img src="flamegraph.svg">
 
-# /proc
+# eBPF:<br> trace what your <br> kernel is doing
+
+# `tcplife`
 
 # /proc
 
-* run a program
-* delete the executable
-* YOU CAN STILL RECOVER IT 
+# /proc/PID/environ
+
+# /proc/PID/maps
+
+# /proc/PID/fd
 
 # Understanding your operating system makes you a better programmer
 
@@ -202,7 +211,7 @@ NULL, NULL) = 512
 
 # OKAY AWESOME <br>LET'S LEARN
 
-# Usual strategies
+# how I thought it worked
 
 * Read LKML
 * Submit patches
@@ -210,6 +219,8 @@ NULL, NULL) = 512
 * Cry
 
 # Our strategies
+
+(nobody has to be nice to you)
 
 1. Strace all the things!
 1. Read some kernel code!
@@ -220,6 +231,8 @@ NULL, NULL) = 512
 # Strategies for <br>getting started
 
 # Strategy 1: <br> strace all the things!
+
+# killall
 
 # Strategy 2: <br> Read some <br> kernel code
 
@@ -241,7 +254,7 @@ OS X kernel: [`http://opensource.apple.com`](http://opensource.apple.com)
 
 <img src="chmod-code-crossed-out.png" class="image">
 
-# LWN!
+# linux weekly news!
 
 # Strategy 3: <br> Write a <br> Linux kernel module
 
@@ -281,12 +294,18 @@ Not as scary as it sounds. I promise!
 
 # Linux Internships
 
-+ Google Summer of Code
-+ Outreachy
++ Google Summer of Code (deadline: around April 2020)
++ Outreachy (deadline: Nov. 5 2019)
+
+# Strategy 6: read zines
+
+# wizardzines.com
+
+<img width="400px" src="zines.png" class="image">
 
 # You can be a kernel hacker
 
 # Questions?
 
 [`twitter.com/b0rk`][twitter]  <br>
-[`jvns.ca`][website]
+[`wizardzines.com`][website]
